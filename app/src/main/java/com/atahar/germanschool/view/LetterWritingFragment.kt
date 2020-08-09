@@ -8,7 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.atahar.germanschool.db.DeutscheWritingDatabase
+import com.atahar.germanschool.db.GermanSchoolDatabase
 import com.atahar.germanschool.repository.LettersRepository
 import com.atahar.germanschool.viewmodel.LettersViewModel
 import com.atahar.germanschool.viewmodel.LettersViewModelFactory
@@ -34,20 +34,33 @@ class LetterWritingFragment : Fragment() {
 
         val application = requireNotNull(this.activity).application
         val repository = LettersRepository.getInstance(
-            DeutscheWritingDatabase.getInstance(application).lettersDao)
+            GermanSchoolDatabase.getInstance(application).lettersDao)
 
-        val factory = LettersViewModelFactory(repository, 2)
+        val factory = LettersViewModelFactory(
+            repository,
+            LetterWritingFragmentArgs.fromBundle(requireArguments()).letterId
+        )
+
         viewModel = ViewModelProvider(this, factory).get(LettersViewModel::class.java)
 
         binding.viewModel = viewModel
         binding.lifecycleOwner = viewLifecycleOwner
 
 
+/*
         viewModel.getLetters().observe(viewLifecycleOwner, Observer {
 
             if (it != null && it.isNotEmpty()) {
                 it.size
                 viewModel.letter.value = it.last()
+            }
+        })
+*/
+
+        viewModel.getLetterById().observe(viewLifecycleOwner, Observer {
+
+            if (it != null) {
+                viewModel.letter.value = it
             }
         })
 

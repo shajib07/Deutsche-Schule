@@ -6,8 +6,12 @@ import com.atahar.germanschool.db.entity.LetterModel
 
 class LettersRepository private constructor(private val lettersDao: LettersDao) {
 
-    fun getLetterById(): LiveData<List<LetterModel>> {
-        return lettersDao.getLetterById()
+    fun getLetters(): LiveData<List<LetterModel>> {
+        return lettersDao.getLetters()
+    }
+
+    fun getLetterById(letterId: Int): LiveData<LetterModel> {
+        return lettersDao.getLetterById(letterId)
     }
 
     companion object {

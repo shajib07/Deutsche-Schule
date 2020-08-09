@@ -17,6 +17,9 @@ interface LettersDao {
     suspend fun insertAll(letters: List<LetterModel>)
 
     @Query("SELECT * FROM letter_sample_table")
-    fun getLetterById(): LiveData<List<LetterModel>>
+    fun getLetters(): LiveData<List<LetterModel>>
+
+    @Query("SELECT * FROM letter_sample_table WHERE letter_id = :letterId")
+    fun getLetterById(letterId: Int): LiveData<LetterModel>
 
 }

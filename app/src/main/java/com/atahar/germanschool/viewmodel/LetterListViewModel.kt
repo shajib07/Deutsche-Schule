@@ -4,60 +4,18 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.atahar.germanschool.db.entity.LetterShortModel
+import com.atahar.germanschool.repository.LettersShortRepository
 
-class LetterListViewModel : ViewModel() {
+class LetterListViewModel(private val lettersShortRepository: LettersShortRepository) : ViewModel() {
 
-    private val _letterList = MutableLiveData<List<LetterShortModel>>()
-    val letterList: LiveData<List<LetterShortModel>>
-        get() = _letterList
+    val shortLetters = MutableLiveData<List<LetterShortModel>>()
 
     init {
-        setData()
+        getShortLetters()
     }
 
-    fun setData() {
-
-        val wordList = listOf(
-            LetterShortModel(
-                "Birthday",
-                "Formal"
-            ),
-            LetterShortModel(
-                "Birthday",
-                "Formal"
-            ),
-            LetterShortModel(
-                "Birthday",
-                "Formal"
-            ),
-            LetterShortModel(
-                "Birthday",
-                "Formal"
-            ),
-            LetterShortModel(
-                "Birthday",
-                "Formal"
-            ),
-            LetterShortModel(
-                "Birthday",
-                "Formal"
-            ),
-            LetterShortModel(
-                "Birthday",
-                "Formal"
-            ),
-            LetterShortModel(
-                "Birthday",
-                "Formal"
-            ),
-            LetterShortModel(
-                "Birthday",
-                "Formal"
-            )
-        )
-
-        _letterList.value = wordList
+    fun getShortLetters(): LiveData<List<LetterShortModel>> {
+        return lettersShortRepository.getShortLetters()
     }
-
 
 }

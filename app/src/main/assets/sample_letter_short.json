@@ -1,0 +1,42 @@
+[
+  {
+    "letterId":"1",
+    "title":"The apple 1",
+    "category":"Der Apfel ist süß."
+  },
+  {
+    "letterId":"2",
+    "title":"The apple 2",
+    "category":"Der Apfel ist süß."
+  },
+  {
+    "letterId":"3",
+    "title":"The apple 3",
+    "category":"Der Apfel ist süß."
+  },
+  {
+    "letterId":"4",
+    "title":"The apple 4",
+    "category":"Der Apfel ist süß."
+  },
+  {
+    "letterId":"5",
+    "title":"The apple 5",
+    "category":"Der Apfel ist süß."
+  },
+  {
+    "letterId":"6",
+    "title":"The apple 6",
+    "category":"Der Apfel ist süß."
+  },
+  {
+    "letterId":"7",
+    "title":"The apple 7",
+    "category":"Der Apfel ist süß."
+  },
+  {
+    "letterId":"8",
+    "title":"The apple 8",
+    "category":"Der Apfel ist süß."
+  }
+]

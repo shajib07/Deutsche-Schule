@@ -8,15 +8,18 @@ import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import com.atahar.germanschool.db.dao.LettersDao
+import com.atahar.germanschool.db.dao.LettersShortDao
 import com.atahar.germanschool.db.entity.LetterModel
+import com.atahar.germanschool.db.entity.LetterShortModel
 import com.atahar.germanschool.workers.DBInsertWorker
 
-@Database(entities = [LetterModel::class], version = 1, exportSchema = false)
-abstract class DeutscheWritingDatabase : RoomDatabase() {
+@Database(entities = [LetterModel::class, LetterShortModel::class], version = 1, exportSchema = false)
+abstract class GermanSchoolDatabase : RoomDatabase() {
 
     abstract val lettersDao: LettersDao
+    abstract val lettersShortDao: LettersShortDao
 
-    private class DeutscheWritingDatabaseCallback(
+    private class GermanSchoolDatabaseCallback(
         private val context: Context
     ) : RoomDatabase.Callback() {
 
@@ -29,9 +32,9 @@ abstract class DeutscheWritingDatabase : RoomDatabase() {
 
     companion object {
 
-        private var INSTANCE: DeutscheWritingDatabase? = null
+        private var INSTANCE: GermanSchoolDatabase? = null
 
-        fun getInstance(context: Context): DeutscheWritingDatabase {
+        fun getInstance(context: Context): GermanSchoolDatabase {
             synchronized(this) {
 
                 var instance = INSTANCE
@@ -39,10 +42,10 @@ abstract class DeutscheWritingDatabase : RoomDatabase() {
                 if (instance == null) {
                     instance = Room.databaseBuilder(
                         context.applicationContext,
-                        DeutscheWritingDatabase::class.java,
+                        GermanSchoolDatabase::class.java,
                         "german_school_database"
                     )
-                        .addCallback(DeutscheWritingDatabaseCallback(context))
+                        .addCallback(GermanSchoolDatabaseCallback(context))
                         .fallbackToDestructiveMigration()
                         .build()
 

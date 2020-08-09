@@ -7,8 +7,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.atahar.germanschool.db.entity.LetterShortModel
 import com.atahar.germanschool.R
 import com.atahar.germanschool.databinding.ItemLetterListBinding
+import com.atahar.germanschool.listener.LetterListClickListener
 
-class LetterListAdapter : RecyclerView.Adapter<LetterListAdapter.LetterListViewHolder>() {
+class LetterListAdapter(private val letterListClickListener: LetterListClickListener) :
+    RecyclerView.Adapter<LetterListAdapter.LetterListViewHolder>() {
 
 
     var data = listOf<LetterShortModel>()
@@ -25,6 +27,10 @@ class LetterListAdapter : RecyclerView.Adapter<LetterListAdapter.LetterListViewH
 
     override fun onBindViewHolder(holder: LetterListViewHolder, position: Int) {
         holder.binding.item = data[position]
+        holder.binding.itemLetterListRoot.setOnClickListener{
+            letterListClickListener.onItemClick(data[position])
+        }
+
     }
 
     class LetterListViewHolder private constructor(val binding: ItemLetterListBinding)
