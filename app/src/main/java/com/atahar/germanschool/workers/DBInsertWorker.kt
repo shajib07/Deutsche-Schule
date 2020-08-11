@@ -7,6 +7,8 @@ import androidx.work.WorkerParameters
 import com.atahar.germanschool.db.GermanSchoolDatabase
 import com.atahar.germanschool.db.entity.LetterModel
 import com.atahar.germanschool.db.entity.LetterShortModel
+import com.atahar.germanschool.parser.JsonParser
+import com.atahar.germanschool.parser.LetterParserModel
 import com.atahar.germanschool.utils.SAMPLE_LETTER_FILENAME
 import com.atahar.germanschool.utils.SAMPLE_LETTER_SHORT_FILENAME
 import com.google.gson.Gson
@@ -22,14 +24,16 @@ class DBInsertWorker(
     override suspend fun doWork(): Result = coroutineScope {
 
         try {
+
             applicationContext.assets.open(SAMPLE_LETTER_FILENAME).use { inputStream ->
 
                 JsonReader(inputStream.reader()).use { jsonReader ->
 
-                    val type = object : TypeToken<List<LetterModel>>() {}.type
-                    val sampleLetterList: List<LetterModel> =
+                    val type = object : TypeToken<List<LetterParserModel>>() {}.type
+                    val letterParserList: List<LetterParserModel> =
                         Gson().fromJson(jsonReader, type)
 
+                    var sampleLetterList = JsonParser.parseLetter(letterParserList)
                     val database = GermanSchoolDatabase.getInstance(applicationContext)
                     database.lettersDao.insertAll(sampleLetterList)
                 }

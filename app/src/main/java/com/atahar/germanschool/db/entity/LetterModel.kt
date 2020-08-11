@@ -11,9 +11,15 @@ data class LetterModel (
     @ColumnInfo(name = "letter_id")
     val letterId: Int,
 
+    @ColumnInfo(name = "letter_start")
+    var letterStart: String,
+
     @ColumnInfo(name = "letter_question")
     val letterQuestion: String,
 
     @ColumnInfo(name = "letter_answer")
-    val letterAnswer: String
+    var letterAnswer: String,
+
+    @ColumnInfo(name = "letter_end")
+    var letterEnd: String
 )

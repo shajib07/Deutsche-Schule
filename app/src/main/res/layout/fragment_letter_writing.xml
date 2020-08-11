@@ -11,32 +11,59 @@
 
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="20dp">
+        android:layout_height="match_parent">
 
 
-        <TextView
-            android:id="@+id/letter_question_tv"
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{viewModel.letter.letterQuestion}"
-            android:textSize="22sp"
-            tools:text="This is a letter quesiton."
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:padding="20dp">
 
-        <TextView
-            android:id="@+id/letter_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="@{viewModel.letter.letterAnswer}"
-            android:textSize="20sp"
-            tools:text="This is a sample letter"
-            app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
-            app:layout_constraintTop_toBottomOf="@id/letter_question_tv" />
+            <TextView
+                android:id="@+id/letter_question_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.letter.letterQuestion}"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Schreiben eine email." />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/letter_start_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@{viewModel.letter.letterStart}"
+                android:textSize="22sp"
+                app:layout_constraintStart_toStartOf="@id/letter_question_tv"
+                app:layout_constraintTop_toBottomOf="@id/letter_question_tv"
+                tools:text="Lieber David." />
+
+            <TextView
+                android:id="@+id/letter_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.letter.letterAnswer}"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
+                app:layout_constraintTop_toBottomOf="@id/letter_start_tv"
+                tools:text="This is a sample letter" />
+
+            <TextView
+                android:id="@+id/letter_end_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@{viewModel.letter.letterEnd}"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
+                app:layout_constraintTop_toBottomOf="@id/letter_tv"
+                tools:text="Mit Freundlichen Grüße" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 </layout>

@@ -1,42 +1,62 @@
 [
   {
     "letterId":"1",
-    "letterQuestion":"The apple 1",
-    "letterAnswer":"Der Apfel ist süß."
+    "letterQuestion":["The apple 1"],
+    "letterStart":["The apple 1"],
+    "letterAnswer": ["Apple 1", "Apple 2", "Apple 3", "Apple 4"],
+    "letterEnd": ["Liebe Grüße", "Julia"]
   },
   {
     "letterId":"2",
-    "letterQuestion":"The apple 2",
-    "letterAnswer":"Der Apfel ist süß."
+    "letterQuestion":["The apple 1"],
+    "letterStart":["The apple 1"],
+    "letterAnswer": ["Apple 1"],
+    "letterEnd": ["Liebe Grüße", "Julia"]
   },
   {
     "letterId":"3",
-    "letterQuestion":"The apple 3",
-    "letterAnswer":"Der Apfel ist süß."
+    "letterQuestion":["The apple 1"],
+    "letterStart":["The apple 1"],
+    "letterAnswer":["vielen Dank für deine Einladung. Ich komme gerne zu deinem Geburtstag, aber zwei Stunden später. Ich muss meine Schwester am Bahnhof abholen. Nochmals danke.",
+      "vielen Dank für deine Einladung. Ich komme gerne zu deinem Geburtstag, aber zwei Stunden später. Ich muss meine Schwester am Bahnhof abholen. Nochmals danke.",
+      "vielen Dank für deine Einladung. Ich komme gerne zu deinem Geburtstag, aber zwei Stunden später. Ich muss meine Schwester am Bahnhof abholen. Nochmals danke.",
+      "vielen Dank für deine Einladung. Ich komme gerne zu deinem Geburtstag, aber zwei Stunden später. Ich muss meine Schwester am Bahnhof abholen. Nochmals danke."],
+    "letterEnd": ["Liebe Grüße", "Julia"]
   },
   {
     "letterId":"4",
-    "letterQuestion":"The apple 4",
-    "letterAnswer":"Der Apfel ist süß."
+    "letterQuestion":["The apple 1"],
+    "letterStart":["The apple 1"],
+    "letterAnswer":["ich bin leider krank. Ich habe Kopfschmerzen und Fieber. Ich kann am Dienstag nicht zum Unterricht kommen. Ich habe eine bitte an dich. Kannst du bitte f&uuml;r mich die Hausaufgaben mitnehmen?",
+      " Ich warte auf deine Antwort. Danke im Voraus."],
+    "letterEnd": ["Liebe Grüße", "Julia"]
   },
   {
     "letterId":"5",
-    "letterQuestion":"The apple 5",
-    "letterAnswer":"Der Apfel ist süß."
+    "letterQuestion":["The apple 1"],
+    "letterStart":["The apple 1"],
+    "letterAnswer":["Apple 1", "Apple 2", "Apple 3"],
+    "letterEnd": ["Liebe Grüße", "Julia"]
   },
   {
     "letterId":"6",
-    "letterQuestion":"The apple 6",
-    "letterAnswer":"Der Apfel ist süß."
+    "letterQuestion":["The apple 1"],
+    "letterStart":["The apple 1"],
+    "letterAnswer":["Apple 1", "Apple 2", "Apple 3"],
+    "letterEnd": ["Liebe Grüße", "Julia"]
   },
   {
     "letterId":"7",
-    "letterQuestion":"The apple 7",
-    "letterAnswer":"Der Apfel ist süß."
+    "letterQuestion":["The apple 1"],
+    "letterStart":["The apple 1"],
+    "letterAnswer":["Apple 1", "Apple 2", "Apple 3"],
+    "letterEnd": ["Liebe Grüße", "Julia"]
   },
   {
     "letterId":"8",
-    "letterQuestion":"The apple 8",
-    "letterAnswer":"Der Apfel ist süß."
+    "letterQuestion":["The apple 1"],
+    "letterStart":["The apple 1"],
+    "letterAnswer":["Apple 1", "Apple 2", "Apple 3"],
+    "letterEnd": ["Liebe Grüße", "Julia"]
   }
 ]
