@@ -1,62 +1,174 @@
 [
   {
-    "letterId":"1",
-    "letterQuestion":["The apple 1"],
-    "letterStart":["The apple 1"],
-    "letterAnswer": ["Apple 1", "Apple 2", "Apple 3", "Apple 4"],
-    "letterEnd": ["Liebe Grüße", "Julia"]
+    "letterId": "1",
+    "letterQuestion": [
+      "Sie machen im Sommer Urlaub.",
+      "Schreiben Sie eine Postkarte an Ihren Freund:",
+      "- Wo?",
+      "- Wie ist das Wetter?",
+      "Was machen Sie im Urlaub?"
+    ],
+    "letterStart": [
+      "Lieber Peter,"
+    ],
+    "letterAnswer": [
+      "ich bin im Urlaub in Bodrum. Das Wetter ist heiß und sonnig hier. Ich schwimme jeden Tag. Am Wochenende gehe ich auf eine Party. Ich tanze gerne. Ich lade dich ein. Screib mir!"
+    ],
+    "letterEnd": [
+      "Liebe Grüße",
+      "Julia"
+    ]
   },
   {
-    "letterId":"2",
-    "letterQuestion":["The apple 1"],
-    "letterStart":["The apple 1"],
-    "letterAnswer": ["Apple 1"],
-    "letterEnd": ["Liebe Grüße", "Julia"]
+    "letterId": "2",
+    "letterQuestion": [
+      "Sie suchen ein günstiges Ticket von Frankfurt nach Sydney. Schreiben Sie an Ihr Reisebüro:",
+      "-Sie wollen am 25. Februar 2006 abfliegen und am 14. März zurückkommen.",
+      "-Sie möchten nicht mit Qantas Airways fliegen!",
+      "Schreiben Sie zu jedem Punkt ein bis zwei Sätze."
+    ],
+    "letterStart": [
+      "Sehr geehrte Damen und Herren,"
+    ],
+    "letterAnswer": [
+      "ich suche ein günstiges Ticket von Frankfurt nach Sydney. Ich möchte am 25. Februar 2006 abfliegen und am 14. März wieder in Frankfurt sein. Ich möchte nicht mit Qantas Airways fliegen.",
+      "Bitte schicken Sie mir Informationen. Vielen Dank."
+    ],
+    "letterEnd": [
+      "Mit freundlichen Grüßen",
+      "Julia"
+    ]
   },
   {
-    "letterId":"3",
-    "letterQuestion":["The apple 1"],
-    "letterStart":["The apple 1"],
-    "letterAnswer":["vielen Dank für deine Einladung. Ich komme gerne zu deinem Geburtstag, aber zwei Stunden später. Ich muss meine Schwester am Bahnhof abholen. Nochmals danke.",
-      "vielen Dank für deine Einladung. Ich komme gerne zu deinem Geburtstag, aber zwei Stunden später. Ich muss meine Schwester am Bahnhof abholen. Nochmals danke.",
-      "vielen Dank für deine Einladung. Ich komme gerne zu deinem Geburtstag, aber zwei Stunden später. Ich muss meine Schwester am Bahnhof abholen. Nochmals danke.",
-      "vielen Dank für deine Einladung. Ich komme gerne zu deinem Geburtstag, aber zwei Stunden später. Ich muss meine Schwester am Bahnhof abholen. Nochmals danke."],
-    "letterEnd": ["Liebe Grüße", "Julia"]
+    "letterId": "3",
+    "letterQuestion": [
+      "Ihr Freund, Michael verstehet viel von Computern. Schreiben Sie eine E-mail an Michael.",
+      "- Sie sollten einen neuen Computer kaufen.",
+      "- Bitten Sie Michael : er soll mit Ihnen einkaufen.",
+      "- Fragen Sie : Wann hat Michael Zeit?  "
+    ],
+    "letterStart": [
+      "Lieber Michael,"
+    ],
+    "letterAnswer": [
+      "ich habe ein Problem, kannst du mir bitte helfen? Ich will einen neuen Computer kaufen. Aber du weißst ja, ich bin kein Computer v Experte.",
+      "Kannst du mit mir in das Geschäft gehen? Der LMedia v Shop L ist auch am Sonntag geöffnet.",
+      "Wann hast du Zeit?"
+    ],
+    "letterEnd": [
+      "Liebe Grüße",
+      "Julia"
+    ]
   },
   {
-    "letterId":"4",
-    "letterQuestion":["The apple 1"],
-    "letterStart":["The apple 1"],
-    "letterAnswer":["ich bin leider krank. Ich habe Kopfschmerzen und Fieber. Ich kann am Dienstag nicht zum Unterricht kommen. Ich habe eine bitte an dich. Kannst du bitte f&uuml;r mich die Hausaufgaben mitnehmen?",
-      " Ich warte auf deine Antwort. Danke im Voraus."],
-    "letterEnd": ["Liebe Grüße", "Julia"]
+    "letterId": "4",
+    "letterQuestion": [
+      "Sie möchten am Wochenende einen Ausflug mit dem Auto machen, zusammen mit",
+      "Ihrer Freundin Sylvia. Schreiben Sie eine E-Mail an Sylvia.",
+      "- Wohin wollen Sie fahren?",
+      "- Was soll Sylvia mitbringen?",
+      "- Wo wollen Sie sich treffen?"
+
+    ],
+    "letterStart": [
+      "Hallo Sylvia,"
+    ],
+    "letterAnswer": [
+      "ich glaube, an diesem Wochenende scheint die Sonne.",
+      "Wir können ans Meer fahren und schwimmen.",
+      "Ich hole dich am Sonntag um 8.30 mit dem Auto ab.",
+      "Du musst deinen Fotoapparat und etwas zu essen mitnehmen.",
+      "Bitte, ruf mich heute Abend an!"
+    ],
+    "letterEnd": [
+      "Herzlichen Grüße",
+      "Deine Susan"
+    ]
   },
   {
-    "letterId":"5",
-    "letterQuestion":["The apple 1"],
-    "letterStart":["The apple 1"],
-    "letterAnswer":["Apple 1", "Apple 2", "Apple 3"],
-    "letterEnd": ["Liebe Grüße", "Julia"]
+    "letterId": "5",
+    "letterQuestion": [
+      "Sie machen im Sommer Urlaub.",
+      "Schreiben Sie eine Postkarte an Ihren Freund:",
+      "- Wo?",
+      "- Wie ist das Wetter?",
+      "Was machen Sie im Urlaub?"
+    ],
+    "letterStart": [
+      "Lieber Peter,"
+    ],
+    "letterAnswer": [
+      "ich bin im Urlaub in Bodrum. Das Wetter ist heiß und sonnig hier. Ich schwimme jeden Tag. Am Wochenende gehe ich auf eine Party. Ich tanze gerne. Ich lade dich ein. Screib mir!"
+    ],
+    "letterEnd": [
+      "Liebe Grüße",
+      "Julia"
+    ]
   },
   {
-    "letterId":"6",
-    "letterQuestion":["The apple 1"],
-    "letterStart":["The apple 1"],
-    "letterAnswer":["Apple 1", "Apple 2", "Apple 3"],
-    "letterEnd": ["Liebe Grüße", "Julia"]
+    "letterId": "6",
+    "letterQuestion": [
+      "Sie suchen ein günstiges Ticket von Frankfurt nach Sydney. Schreiben Sie an Ihr Reisebüro:",
+      "-Sie wollen am 25. Februar 2006 abfliegen und am 14. März zurückkommen.",
+      "-Sie möchten nicht mit Qantas Airways fliegen!",
+      "Schreiben Sie zu jedem Punkt ein bis zwei Sätze."
+    ],
+    "letterStart": [
+      "Sehr geehrte Damen und Herren,"
+    ],
+    "letterAnswer": [
+      "ich suche ein günstiges Ticket von Frankfurt nach Sydney. Ich möchte am 25. Februar 2006 abfliegen und am 14. März wieder in Frankfurt sein. Ich möchte nicht mit Qantas Airways fliegen.",
+      "Bitte schicken Sie mir Informationen. Vielen Dank."
+    ],
+    "letterEnd": [
+      "Mit freundlichen Grüßen",
+      "Julia"
+    ]
   },
   {
-    "letterId":"7",
-    "letterQuestion":["The apple 1"],
-    "letterStart":["The apple 1"],
-    "letterAnswer":["Apple 1", "Apple 2", "Apple 3"],
-    "letterEnd": ["Liebe Grüße", "Julia"]
+    "letterId": "7",
+    "letterQuestion": [
+      "Ihr Freund, Michael verstehet viel von Computern. Schreiben Sie eine E v mail an Michael.",
+      "- Sie sollten einen neuen Computer kaufen.",
+      "- Bitten Sie Michael : er soll mit Ihnen einkaufen.",
+      "- Fragen Sie : Wann hat Michael Zeit?  "
+    ],
+    "letterStart": [
+      "Lieber Michael,"
+    ],
+    "letterAnswer": [
+      "ich habe ein Problem, kannst du mir bitte helfen? Ich will einen neuen Computer kaufen. Aber du weißst ja, ich bin kein Computer v Experte.",
+      "Kannst du mit mir in das Geschäft gehen? Der LMedia v Shop L ist auch am Sonntag geöffnet.",
+      "Wann hast du Zeit?"
+    ],
+    "letterEnd": [
+      "Liebe Grüße",
+      "Julia"
+    ]
   },
   {
-    "letterId":"8",
-    "letterQuestion":["The apple 1"],
-    "letterStart":["The apple 1"],
-    "letterAnswer":["Apple 1", "Apple 2", "Apple 3"],
-    "letterEnd": ["Liebe Grüße", "Julia"]
+    "letterId": "8",
+    "letterQuestion": [
+      "Sie möchten am Wochenende einen Ausflug mit dem Auto machen, zusammen mit",
+      "Ihrer Freundin Sylvia. Schreiben Sie eine E-Mail an Sylvia.",
+      "- Wohin wollen Sie fahren?",
+      "- Was soll Sylvia mitbringen?",
+      "- Wo wollen Sie sich treffen?"
+
+    ],
+    "letterStart": [
+      "Hallo Sylvia,"
+    ],
+    "letterAnswer": [
+      "ich glaube, an diesem Wochenende scheint die Sonne.",
+      "Wir können ans Meer fahren und schwimmen.",
+      "Ich hole dich am Sonntag um 8.30 mit dem Auto ab.",
+      "Du musst deinen Fotoapparat und etwas zu essen mitnehmen.",
+      "Bitte, ruf mich heute Abend an!"
+    ],
+    "letterEnd": [
+      "Herzlichen Grüße",
+      "Deine Susan"
+    ]
   }
 ]

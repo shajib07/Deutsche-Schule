@@ -4,16 +4,15 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.atahar.germanschool.db.entity.LetterShortModel
 import com.atahar.germanschool.R
 import com.atahar.germanschool.databinding.ItemLetterListBinding
 import com.atahar.germanschool.listener.LetterListClickListener
+import com.atahar.germanschool.model.LetterListItem
 
 class LetterListAdapter(private val letterListClickListener: LetterListClickListener) :
     RecyclerView.Adapter<LetterListAdapter.LetterListViewHolder>() {
 
-
-    var data = listOf<LetterShortModel>()
+    var data = listOf<LetterListItem>()
         set(value) {
             field = value
             notifyDataSetChanged()

@@ -33,7 +33,9 @@ class DBInsertWorker(
                     val letterParserList: List<LetterParserModel> =
                         Gson().fromJson(jsonReader, type)
 
-                    var sampleLetterList = JsonParser.parseLetter(letterParserList)
+                    val sampleLetterList: ArrayList<LetterModel> =
+                        JsonParser.parseLetter(letterParserList)
+
                     val database = GermanSchoolDatabase.getInstance(applicationContext)
                     database.lettersDao.insertAll(sampleLetterList)
                 }

@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--
+    <color name="colorPrimary">#90279e</color>
+    <color name="colorPrimaryDark">#5f006f</color>
+    <color name="colorPrimaryLight">#c35ad0</color>
+    <color name="colorAccent">#BD67C2</color>
+
+    <color name="colorSecondary">#d82bb5</color>
+    <color name="colorSecondaryDark">#a30085</color>
+    <color name="colorSecondaryLight">#ff67e7</color>
+-->
+    <color name="colorPrimary">#3D3D3D</color>
+    <color name="colorPrimaryDark">#101010</color>
+    <color name="colorPrimaryLight">#7A7A7A</color>
+    <color name="colorAccent">#ee514b</color>
+
+    <color name="colorSecondary">#d82bb5</color>
+    <color name="colorSecondaryDark">#a30085</color>
+    <color name="colorSecondaryLight">#ff67e7</color>
+
+    <color name="white">#ffffff</color>
+    <color name="grey">#FFFFFF</color>
+    <color name="textDark">#3D3D3D</color>
+
+<!--
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+-->
 
-    <color name="letter_list_item_bg_color">#87CEFA</color>
+    <color name="letter_list_item_bg_color">@color/white</color>
+    <color name="letter_list_bg_color">@color/colorPrimaryLight</color>
+    <color name="letter_fragment_bg_color">@color/white</color>
 
 </resources>

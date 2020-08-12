@@ -15,7 +15,9 @@ import com.atahar.germanschool.R
 import com.atahar.germanschool.databinding.FragmentLetterListBinding
 import com.atahar.germanschool.db.GermanSchoolDatabase
 import com.atahar.germanschool.db.entity.LetterShortModel
+import com.atahar.germanschool.db.entity.asDomainModel
 import com.atahar.germanschool.listener.LetterListClickListener
+import com.atahar.germanschool.model.LetterListItem
 import com.atahar.germanschool.repository.LettersShortRepository
 import com.atahar.germanschool.viewmodel.LetterListViewModelFactory
 
@@ -53,7 +55,7 @@ class LetterListFragment : Fragment(), LetterListClickListener {
         viewModel.getShortLetters().observe(viewLifecycleOwner, Observer {
             if (it != null && it.isNotEmpty()) {
                 viewModel.shortLetters.value = it
-                adapter.data = viewModel.shortLetters.value ?: emptyList()
+                adapter.data = viewModel.shortLetters.value?.asDomainModel() ?: emptyList()
             }
         })
 
@@ -63,9 +65,9 @@ class LetterListFragment : Fragment(), LetterListClickListener {
         return binding.root
     }
 
-    override fun onItemClick(letterShortModel: LetterShortModel) {
+    override fun onItemClick(letterListItem: LetterListItem) {
         val action = LetterListFragmentDirections.actionLetterListFragmentToLetterWritingFragment()
-        action.letterId = letterShortModel.letterId
+        action.letterId = letterListItem.letterId
         findNavController().navigate(action)
 
     }

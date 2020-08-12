@@ -13,7 +13,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/letter_fragment_bg_color">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,7 +27,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{viewModel.letter.letterQuestion}"
-                android:textSize="22sp"
+                android:textSize="18sp"
+                android:textColor="@color/textDark"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Schreiben eine email." />
@@ -36,8 +38,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:textColor="@color/textDark"
                 android:text="@{viewModel.letter.letterStart}"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@id/letter_question_tv"
                 app:layout_constraintTop_toBottomOf="@id/letter_question_tv"
                 tools:text="Lieber David." />
@@ -46,8 +49,9 @@
                 android:id="@+id/letter_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/textDark"
                 android:text="@{viewModel.letter.letterAnswer}"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
                 app:layout_constraintTop_toBottomOf="@id/letter_start_tv"
                 tools:text="This is a sample letter" />
@@ -56,9 +60,10 @@
                 android:id="@+id/letter_end_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/textDark"
                 android:layout_marginTop="20dp"
                 android:text="@{viewModel.letter.letterEnd}"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
                 app:layout_constraintTop_toBottomOf="@id/letter_tv"
                 tools:text="Mit Freundlichen Grüße" />
