@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/letterListFragment"
         android:name="com.atahar.germanschool.view.LetterListFragment"
-        android:label="LetterListFragment" >
+        android:label="Brief Schreiben" >
         <action
             android:id="@+id/action_letterListFragment_to_letterWritingFragment"
             app:destination="@id/letterWritingFragment"
@@ -31,7 +31,7 @@
     <fragment
         android:id="@+id/letterStructureFragment"
         android:name="com.atahar.germanschool.view.LetterStructureFragment"
-        android:label="Brief" >
+        android:label="Letter Structure" >
 
         <argument
             android:name="letterId"
@@ -42,6 +42,6 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.atahar.germanschool.view.AboutFragment"
-        android:label="AboutFragment"
+        android:label="About The App"
         tools:layout="@layout/fragment_about"/>
 </navigation>

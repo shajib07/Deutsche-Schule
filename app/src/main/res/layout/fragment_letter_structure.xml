@@ -96,7 +96,7 @@
                 android:paddingTop="10dp"
                 android:paddingEnd="10dp"
                 android:paddingBottom="20dp"
-                android:text="Liebe Freunde,\nLiebe Sara,\nLieber Ali,"
+                android:text="Liebe Freunde,\nLiebe Anja,\nLieber Henry,"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/salutation_informal_divider" />

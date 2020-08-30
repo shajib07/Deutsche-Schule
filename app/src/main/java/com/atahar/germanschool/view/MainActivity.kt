@@ -76,9 +76,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
 
+            R.id.nav_letter_list_fragment -> {
+                navController.popBackStack(R.id.letterListFragment, true)
+                navController.popBackStack(R.id.letterStructureFragment, true)
+                navController.popBackStack(R.id.aboutFragment, true)
+
+                navController.navigate(R.id.letterListFragment)
+            }
+
             R.id.nav_letter_structure_fragment -> {
                 navController.popBackStack(R.id.letterStructureFragment, true)
                 navController.popBackStack(R.id.aboutFragment, true)
+                navController.popBackStack(R.id.letterListFragment, true)
 
                 navController.navigate(R.id.letterStructureFragment)
             }
@@ -86,6 +95,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nav_about_fragment -> {
                 navController.popBackStack(R.id.aboutFragment, true)
                 navController.popBackStack(R.id.letterStructureFragment, true)
+                navController.popBackStack(R.id.letterListFragment, true)
 
                 navController.navigate(R.id.aboutFragment)
             }
