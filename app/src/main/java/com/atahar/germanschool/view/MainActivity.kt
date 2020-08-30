@@ -7,11 +7,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import androidx.core.view.GravityCompat
+import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.navigateUp
 import com.atahar.germanschool.R
+import com.atahar.germanschool.databinding.NavHeaderMainBinding
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_main.*
@@ -26,6 +28,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val headerView = navView.inflateHeaderView(R.layout.nav_header_main)
 
         setSupportActionBar(findViewById(R.id.toolbar))
 
@@ -45,8 +49,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration)
 
         navController.addOnDestinationChangedListener { controller, destination, arguments ->
-
-
         }
     }
 
@@ -74,15 +76,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
 
-/*
-            R.id.nav_favourite_fragment -> {
-                navController.popBackStack(R.id.wordBundleListFragment, false)
-                navController.navigate(R.id.favouriteWordsFragment)
+            R.id.nav_letter_structure_fragment -> {
+                navController.popBackStack(R.id.letterStructureFragment, true)
+                navController.popBackStack(R.id.aboutFragment, true)
+
+                navController.navigate(R.id.letterStructureFragment)
             }
-*/
 
             R.id.nav_about_fragment -> {
                 navController.popBackStack(R.id.aboutFragment, true)
+                navController.popBackStack(R.id.letterStructureFragment, true)
+
                 navController.navigate(R.id.aboutFragment)
             }
         }

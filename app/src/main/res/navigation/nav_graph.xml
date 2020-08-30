@@ -29,6 +29,17 @@
 
     </fragment>
     <fragment
+        android:id="@+id/letterStructureFragment"
+        android:name="com.atahar.germanschool.view.LetterStructureFragment"
+        android:label="Brief" >
+
+        <argument
+            android:name="letterId"
+            app:argType="integer"
+            android:defaultValue="0"/>
+
+    </fragment>
+    <fragment
         android:id="@+id/aboutFragment"
         android:name="com.atahar.germanschool.view.AboutFragment"
         android:label="AboutFragment"
