@@ -14,29 +14,29 @@ object JsonParser {
             val startSize = parserModel.letterStart.size
             var start = ""
             for (i in 0 until startSize) {
+                if (i != 0) start += "\n"
                 start += parserModel.letterStart[i]
-                start += "\n"
             }
 
             val questionSize = parserModel.letterQuestion.size
             var question = ""
             for (i in 0 until questionSize) {
+                if (i != 0) question += "\n"
                 question += parserModel.letterQuestion[i]
-                question += "\n"
             }
 
             val answerSize = parserModel.letterAnswer.size
             var answer = ""
             for (i in 0 until answerSize) {
+                if (i != 0) answer += "\n"
                 answer += parserModel.letterAnswer[i]
-                answer += "\n"
             }
 
             val endSize = parserModel.letterEnd.size
             var end = ""
             for (i in 0 until endSize) {
+                if (i != 0) end += "\n"
                 end += parserModel.letterEnd[i]
-                end += "\n"
             }
 
             letterList.add(

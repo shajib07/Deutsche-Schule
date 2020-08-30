@@ -5,6 +5,8 @@
 
     <data>
 
+        <import type="android.view.View" />
+
         <variable
             name="viewModel"
             type="com.atahar.germanschool.viewmodel.LettersViewModel" />
@@ -20,37 +22,95 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp">
+            android:padding="6dp">
+
+            <androidx.constraintlayout.widget.Group
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/email_bg_shape"
+                app:layout_constraintBottom_toBottomOf="@id/letter_end_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/letter_start_tv" />
+
+            <androidx.constraintlayout.widget.Group
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/email_bg_shape"
+                android:visibility="@{viewModel.translateOn ? View.VISIBLE : View.GONE}"
+                app:constraint_referenced_ids="letter_start_trans_tv, letter_trans_tv, letter_end_trans_tv"
+                app:layout_constraintBottom_toBottomOf="@id/letter_end_trans_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/letter_start_trans_tv" />
 
             <TextView
                 android:id="@+id/letter_question_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="@drawable/email_ques_bg_shape"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
                 android:text="@{viewModel.letter.letterQuestion}"
-                android:textSize="18sp"
                 android:textColor="@color/textDark"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Schreiben eine email." />
 
             <TextView
+                android:id="@+id/letter_question_trans_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/email_ques_bg_shape"
+                android:padding="10dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:text="@{viewModel.letter.letterQuestion}"
+                android:textColor="@color/textDark"
+                android:textSize="18sp"
+                android:visibility="@{viewModel.translateOn ? View.VISIBLE : View.GONE}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/letter_question_tv"
+                tools:text="Schreiben eine email."
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/ques_barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="letter_question_tv, letter_question_trans_tv" />
+
+            <TextView
                 android:id="@+id/letter_start_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:textColor="@color/textDark"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
                 android:text="@{viewModel.letter.letterStart}"
+                android:textColor="@color/textDark"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@id/letter_question_tv"
-                app:layout_constraintTop_toBottomOf="@id/letter_question_tv"
+                app:layout_constraintTop_toBottomOf="@id/ques_barrier"
                 tools:text="Lieber David." />
 
             <TextView
                 android:id="@+id/letter_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/textDark"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
                 android:text="@{viewModel.letter.letterAnswer}"
+                android:textColor="@color/textDark"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
                 app:layout_constraintTop_toBottomOf="@id/letter_start_tv"
@@ -60,12 +120,60 @@
                 android:id="@+id/letter_end_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/textDark"
                 android:layout_marginTop="20dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
                 android:text="@{viewModel.letter.letterEnd}"
+                android:textColor="@color/textDark"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
                 app:layout_constraintTop_toBottomOf="@id/letter_tv"
+                tools:text="Mit Freundlichen Grüße" />
+
+            <TextView
+                android:id="@+id/letter_start_trans_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:text="@{viewModel.letter.letterStart}"
+                android:textColor="@color/textDark"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/letter_question_tv"
+                app:layout_constraintTop_toBottomOf="@id/letter_end_tv"
+                tools:text="Lieber David." />
+
+            <TextView
+                android:id="@+id/letter_trans_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:text="@{viewModel.letter.letterAnswer}"
+                android:textColor="@color/textDark"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
+                app:layout_constraintTop_toBottomOf="@id/letter_start_trans_tv"
+                tools:text="This is a sample letter" />
+
+            <TextView
+                android:id="@+id/letter_end_trans_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="@{viewModel.letter.letterEnd}"
+                android:textColor="@color/textDark"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
+                app:layout_constraintTop_toBottomOf="@id/letter_trans_tv"
                 tools:text="Mit Freundlichen Grüße" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

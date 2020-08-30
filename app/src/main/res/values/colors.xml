@@ -5,19 +5,33 @@
     <color name="colorPrimaryDark">#5f006f</color>
     <color name="colorPrimaryLight">#c35ad0</color>
     <color name="colorAccent">#BD67C2</color>
+-->
 
+    <color name="colorPrimary">#002211</color>
+    <color name="colorPrimaryDark">#001919</color>
+    <color name="colorPrimaryLight">#002E17</color>
+    <color name="colorAccent">#CFD2D7</color>
+
+<!--
+    <color name="colorPrimary">#3E0000</color>
+    <color name="colorPrimaryDark">#2E0000</color>
+    <color name="colorPrimaryLight">#530000</color>
+    <color name="colorAccent">#CFD2D7</color>
+-->
+
+<!--
+    <color name="colorPrimary">#3D3D3D</color>
+    <color name="colorPrimaryDark">#101010</color>
+    <color name="colorPrimaryLight">#CFD2D7</color>
+    <color name="colorAccent">#CFD2D7</color>
+-->
+
+
+<!--
     <color name="colorSecondary">#d82bb5</color>
     <color name="colorSecondaryDark">#a30085</color>
     <color name="colorSecondaryLight">#ff67e7</color>
 -->
-    <color name="colorPrimary">#3D3D3D</color>
-    <color name="colorPrimaryDark">#101010</color>
-    <color name="colorPrimaryLight">#7A7A7A</color>
-    <color name="colorAccent">#ee514b</color>
-
-    <color name="colorSecondary">#d82bb5</color>
-    <color name="colorSecondaryDark">#a30085</color>
-    <color name="colorSecondaryLight">#ff67e7</color>
 
     <color name="white">#ffffff</color>
     <color name="grey">#FFFFFF</color>
@@ -32,6 +46,6 @@
 
     <color name="letter_list_item_bg_color">@color/white</color>
     <color name="letter_list_bg_color">@color/colorPrimaryLight</color>
-    <color name="letter_fragment_bg_color">@color/white</color>
+    <color name="letter_fragment_bg_color">@color/colorPrimaryLight</color>
 
 </resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_favourite_fragment"
+            android:title="Favourite Words" />
+
+        <item
+            android:id="@+id/nav_about_fragment"
+            android:title="About" />
+
+    </group>
+
+    <item android:title="Agreement">
+        <menu>
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="Privacy Policy" />
+
+            <item
+                android:id="@+id/nav_terms_of_service"
+                android:title="Terms of Service" />
+
+        </menu>
+    </item>
+
+</menu>

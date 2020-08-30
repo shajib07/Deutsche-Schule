@@ -13,6 +13,15 @@ class LettersViewModel(
 
     val letter = MutableLiveData<LetterModel>()
 
+    var translateOn = MutableLiveData<Boolean>(false)
+
+    fun actionTranslateOnClick() {
+        translateOn.value = translateOn.value == false
+        onTitleChange.value = translateOn.value
+    }
+
+    var onTitleChange = MutableLiveData<Boolean>()
+
     fun getLetters(): LiveData<List<LetterModel>> {
         return repository.getLetters()
     }

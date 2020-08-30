@@ -11,12 +11,16 @@
         android:label="LetterListFragment" >
         <action
             android:id="@+id/action_letterListFragment_to_letterWritingFragment"
-            app:destination="@id/letterWritingFragment" />
+            app:destination="@id/letterWritingFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/letterWritingFragment"
         android:name="com.atahar.germanschool.view.LetterWritingFragment"
-        android:label="LetterWritingFragment" >
+        android:label="Brief" >
 
         <argument
             android:name="letterId"
@@ -24,4 +28,9 @@
             android:defaultValue="0"/>
 
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.atahar.germanschool.view.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about"/>
 </navigation>
