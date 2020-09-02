@@ -2,148 +2,143 @@
   {
     "letterId": "1",
     "letterQuestion": [
-      "Sie machen im Sommer Urlaub.",
-      "Schreiben Sie eine Postkarte an Ihren Freund:",
-      "- Wo?",
-      "- Wie ist das Wetter?",
-      "Was machen Sie im Urlaub?"
+      "Sie haben einen neuen Job. Schreiben Sie eine E-Mail an Ihrer Freundin Julia.",
+      "- Erzähl ihr von deinem Job.",
+      "- Erzählen Sie ihr von Ihren Kollegen."
     ],
     "letterStart": [
-      "Lieber Peter,"
+      "Liebe Julia,"
     ],
     "letterAnswer": [
-      "ich bin im Urlaub in Bodrum. Das Wetter ist heiß und sonnig hier. Ich schwimme jeden Tag. Am Wochenende gehe ich auf eine Party. Ich tanze gerne. Ich lade dich ein. Screib mir!"
+      "ich habe letzten Monat einen neuen Job bekommen. Ich arbeite jetzt als Softwareentwickler in einem Softwareunternehmen. Meine Kollegen sind sehr nett und freundlich. Sie sind auch sehr hilfreich. Ich liebe meinen neuen Job.",
+      "Schreib bitte eine E-Mail an mich über deinen aktuellen Job."
     ],
     "letterEnd": [
       "Liebe Grüße",
-      "Julia"
+      "Susan"
     ]
   },
   {
     "letterId": "2",
     "letterQuestion": [
-      "Sie suchen ein günstiges Ticket von Frankfurt nach Sydney. Schreiben Sie an Ihr Reisebüro:",
-      "-Sie wollen am 25. Februar 2006 abfliegen und am 14. März zurückkommen.",
-      "-Sie möchten nicht mit Qantas Airways fliegen!",
-      "Schreiben Sie zu jedem Punkt ein bis zwei Sätze."
+      "Sie sind krank und können nicht zum Sprachkurs kommen. Schreiben Sie Ihrer Lehrerin:",
+      "- Wie lange können Sie nicht kommen?",
+      "- Warum können Sie nicht kommen?",
+      "- Fragen Sie nach den Hausaufgaben?"
     ],
     "letterStart": [
-      "Sehr geehrte Damen und Herren,"
+      "Liebe Frau Anna,"
     ],
     "letterAnswer": [
-      "ich suche ein günstiges Ticket von Frankfurt nach Sydney. Ich möchte am 25. Februar 2006 abfliegen und am 14. März wieder in Frankfurt sein. Ich möchte nicht mit Qantas Airways fliegen.",
-      "Bitte schicken Sie mir Informationen. Vielen Dank."
+      "ich bin krank von letzter Nacht. Ich könnte morgen nicht am Sprachkurs teilnehmen. Ich habe Fieber und habe den Arzttermin genommen.",
+      "Bitte, lassen Sie mich über die Hausaufgaben wissen."
     ],
     "letterEnd": [
       "Mit freundlichen Grüßen",
-      "Julia"
+      "Christian"
     ]
   },
   {
     "letterId": "3",
     "letterQuestion": [
-      "Ihr Freund, Michael verstehet viel von Computern. Schreiben Sie eine E-mail an Michael.",
-      "- Sie sollten einen neuen Computer kaufen.",
-      "- Bitten Sie Michael : er soll mit Ihnen einkaufen.",
-      "- Fragen Sie : Wann hat Michael Zeit?  "
+      "Sie wollen ein Auto kaufen. Ihre Freundin Lily versteht viel über Autos. Schreiben Sie eine E-Mail an Lily:",
+      "- Sie sollten ein neues Auto kaufen.",
+      "- Sie brauchen ihre Hilfe, um das neueste Modellauto zu kaufen.",
+      "- Fragen Sie, ob sie am Samstag Zeit hat? "
     ],
     "letterStart": [
-      "Lieber Michael,"
+      "Liebe Lily,"
     ],
     "letterAnswer": [
-      "ich habe ein Problem, kannst du mir bitte helfen? Ich will einen neuen Computer kaufen. Aber du weißst ja, ich bin kein Computer v Experte.",
-      "Kannst du mit mir in das Geschäft gehen? Der LMedia v Shop L ist auch am Sonntag geöffnet.",
-      "Wann hast du Zeit?"
+      "ich möchte ein neues Auto kaufen. Aber ich habe keine Ahnung von dem Auto. Könntest du mir Hilfen, das neues Modellauto zu kaufen? Wie viel Geld sollte ich für das Auto einplanen?",
+      "Hast du am Samstag Zeit? Schreib bitte eine E-Mail an mich.",
+      "Danke und bis dann."
     ],
     "letterEnd": [
       "Liebe Grüße",
-      "Julia"
+      "Michael"
     ]
   },
   {
     "letterId": "4",
     "letterQuestion": [
-      "Sie möchten am Wochenende einen Ausflug mit dem Auto machen, zusammen mit",
-      "Ihrer Freundin Sylvia. Schreiben Sie eine E-Mail an Sylvia.",
-      "- Wohin wollen Sie fahren?",
-      "- Was soll Sylvia mitbringen?",
-      "- Wo wollen Sie sich treffen?"
-
+      "Sie waren letzten Sommer in Berlin in einem Deutschkurs. Sie schreiben an Ihrem Lehrer Herr Henry:",
+      "- Gibt es dieses Jahr einen Deutschkurs für B1? Wann?",
+      "- Sie möchten sich an den Kurs anmelden."
     ],
     "letterStart": [
-      "Hallo Sylvia,"
+      "Lieber Herr Henry,"
     ],
     "letterAnswer": [
-      "ich glaube, an diesem Wochenende scheint die Sonne.",
-      "Wir können ans Meer fahren und schwimmen.",
-      "Ich hole dich am Sonntag um 8.30 mit dem Auto ab.",
-      "Du musst deinen Fotoapparat und etwas zu essen mitnehmen.",
-      "Bitte, ruf mich heute Abend an!"
+      "ich heiße Julia. Ich war im letzten Sommer in Berlin in Ihrem Deutschkurs. Gibt es dieses Jahr einen Kurs für B1?",
+      "Wann beginnt der Kurs? Was ist der Preis für den Kurs?",
+      "Ich möchte mich für den Kurs anmelden",
+      "Ich warte auf Ihre Antwort."
     ],
     "letterEnd": [
-      "Herzlichen Grüße",
-      "Deine Susan"
+      "Mit freundlichen Grüßen",
+      "Schmidt"
     ]
   },
   {
     "letterId": "5",
     "letterQuestion": [
-      "Sie machen im Sommer Urlaub.",
-      "Schreiben Sie eine Postkarte an Ihren Freund:",
-      "- Wo?",
-      "- Wie ist das Wetter?",
-      "Was machen Sie im Urlaub?"
+      "Schreiben Sie eine Einladung zu Ihrem Geburtstag für Ihre Freunde:",
+      "- Wo und wann Sie ihre Party machen?",
+      "- Die Freunde sollen einen Kuchen und einen Salat mitbringen."
     ],
     "letterStart": [
-      "Lieber Peter,"
+      "Liebe Charlotte und Paul,"
     ],
     "letterAnswer": [
-      "ich bin im Urlaub in Bodrum. Das Wetter ist heiß und sonnig hier. Ich schwimme jeden Tag. Am Wochenende gehe ich auf eine Party. Ich tanze gerne. Ich lade dich ein. Screib mir!"
+      "ich werde meine Party am 20. Juli feiern. Ich möchte gern euch zu meinem Geburtstag einladen. Die Party fängt um 19.00 Uhr bei mir zu Hause. Könnt ihr bitte etwas Salat mitbringen?",
+      "Ich freue mich auf das Treffen mit euch."
     ],
     "letterEnd": [
       "Liebe Grüße",
-      "Julia"
+      "Clara"
     ]
   },
   {
     "letterId": "6",
     "letterQuestion": [
-      "Sie suchen ein günstiges Ticket von Frankfurt nach Sydney. Schreiben Sie an Ihr Reisebüro:",
-      "-Sie wollen am 25. Februar 2006 abfliegen und am 14. März zurückkommen.",
-      "-Sie möchten nicht mit Qantas Airways fliegen!",
-      "Schreiben Sie zu jedem Punkt ein bis zwei Sätze."
+      "Ihre Prüfung ist beendet. Jetzt möchten Sie am Wochenende einen Ausflug mit Ihrer Freundin Emilia machen. Schreiben Sie eine E-Mail an Emilia",
+      "- Wohin wollen Sie fahren?",
+      "- Was soll Emilia mitbringen?",
+      "- Wo wollen Sie sich treffen?."
     ],
     "letterStart": [
-      "Sehr geehrte Damen und Herren,"
+      "Liebe Emilia,"
     ],
     "letterAnswer": [
-      "ich suche ein günstiges Ticket von Frankfurt nach Sydney. Ich möchte am 25. Februar 2006 abfliegen und am 14. März wieder in Frankfurt sein. Ich möchte nicht mit Qantas Airways fliegen.",
-      "Bitte schicken Sie mir Informationen. Vielen Dank."
+      "Meine Prüfung ist gestern beendet. Ich möchte dieses Wochenende eine Tour mit dir machen. Wir können ans Meer fahren und Schwimmen.",
+      "Ich hole dich am Samstag um 10.00 mit dem Auto ab. Du musst deine Sonnenbrille und etwas zu essen mitnehmen.",
+      "Bitte, ruf mich heute Abend an."
     ],
     "letterEnd": [
-      "Mit freundlichen Grüßen",
-      "Julia"
+      "Lieber Jonas"
     ]
   },
   {
     "letterId": "7",
     "letterQuestion": [
-      "Ihr Freund, Michael verstehet viel von Computern. Schreiben Sie eine E v mail an Michael.",
-      "- Sie sollten einen neuen Computer kaufen.",
-      "- Bitten Sie Michael : er soll mit Ihnen einkaufen.",
-      "- Fragen Sie : Wann hat Michael Zeit?  "
+      "Sie möchten im Sommer Munich besuchen. Schreiben Sie eine E-Mail an die Touristeninfo:",
+      "- Warum schreiben Sie?",
+      "- Fragen Sie nach Informationen über Film, Kulturprogramm, Museen usw.",
+      "- Fragen Sie nach den Hoteladressen?"
     ],
     "letterStart": [
-      "Lieber Michael,"
+      "Sehr geehrte Damen und Herren,"
     ],
     "letterAnswer": [
-      "ich habe ein Problem, kannst du mir bitte helfen? Ich will einen neuen Computer kaufen. Aber du weißst ja, ich bin kein Computer v Experte.",
-      "Kannst du mit mir in das Geschäft gehen? Der LMedia v Shop L ist auch am Sonntag geöffnet.",
-      "Wann hast du Zeit?"
+      "ich werde im Sommerurlaub im August nach Munich fahren. Haben Sie Informationen über Film, Museen usw.? Gibt es auch ein Kulturprogramm in Ihrer Stadt?",
+      "Senden Sie mir bitte auch die Hoteladressen.",
+      "Ich warte auf Ihre Antwort",
+      "Danke im Voraus."
     ],
     "letterEnd": [
-      "Liebe Grüße",
-      "Julia"
+      "Mit freundlichen Grüßen",
+      "Schmidt"
     ]
   },
   {
