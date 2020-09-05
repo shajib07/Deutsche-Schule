@@ -14,6 +14,9 @@ data class LetterModel (
     @ColumnInfo(name = "letter_start")
     var letterStart: String,
 
+    @ColumnInfo(name = "letter_topic")
+    val letterTopic: String,
+
     @ColumnInfo(name = "letter_question")
     val letterQuestion: String,
 
@@ -25,6 +28,9 @@ data class LetterModel (
 
     @ColumnInfo(name = "letter_start_en")
     var letterStartEn: String,
+
+    @ColumnInfo(name = "letter_Topic_en")
+    val letterTopicEn: String,
 
     @ColumnInfo(name = "letter_question_en")
     val letterQuestionEn: String,

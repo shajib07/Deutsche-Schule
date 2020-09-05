@@ -18,6 +18,13 @@ object JsonParser {
                 start += parserModel.letterStart[i]
             }
 
+            val topicSize = parserModel.letterTopic.size
+            var topic = ""
+            for (i in 0 until topicSize) {
+                if (i != 0) topic += "\n"
+                topic += parserModel.letterTopic[i]
+            }
+
             val questionSize = parserModel.letterQuestion.size
             var question = ""
             for (i in 0 until questionSize) {
@@ -46,6 +53,13 @@ object JsonParser {
                 startEn += parserModel.letterStartEn[i]
             }
 
+            val topicSizeEn = parserModel.letterTopicEn.size
+            var topicEn = ""
+            for (i in 0 until topicSizeEn) {
+                if (i != 0) topicEn += "\n"
+                topicEn += parserModel.letterTopicEn[i]
+            }
+
             val questionSizeEn = parserModel.letterQuestionEn.size
             var questionEn = ""
             for (i in 0 until questionSizeEn) {
@@ -71,10 +85,12 @@ object JsonParser {
                 LetterModel(
                     parserModel.letterId,
                     start,
+                    topic,
                     question,
                     answer,
                     end,
                     startEn,
+                    topicEn,
                     questionEn,
                     answerEn,
                     endEn

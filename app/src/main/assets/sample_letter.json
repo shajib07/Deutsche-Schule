@@ -1,9 +1,10 @@
 [
   {
     "letterId": "1",
+    "letterTopic": [
+      "Sie haben einen neuen Job. Schreiben Sie eine E-Mail an Ihrer Freundin Julia:"
+    ],
     "letterQuestion": [
-      "Sie haben einen neuen Job. Schreiben Sie eine E-Mail an Ihrer Freundin Julia:",
-      "",
       "- Erzähl ihr von deinem Job.",
       "- Erzählen Sie ihr von Ihren Kollegen."
     ],
@@ -18,9 +19,10 @@
       "Liebe Grüße",
       "Susan"
     ],
+    "letterTopicEn": [
+      "You have a new job. Write an email to your friend Julia:"
+    ],
     "letterQuestionEn": [
-      "You have a new job. Write an email to your friend Julia:",
-      "",
       "- Tell her about your job.",
       "- Tell her about your colleagues."
     ],
@@ -38,9 +40,10 @@
   },
   {
     "letterId": "2",
+    "letterTopic": [
+      "Sie sind krank und können nicht zum Sprachkurs kommen. Schreiben Sie Ihrer Lehrerin:"
+    ],
     "letterQuestion": [
-      "Sie sind krank und können nicht zum Sprachkurs kommen. Schreiben Sie Ihrer Lehrerin:",
-      "",
       "- Wie lange können Sie nicht kommen?",
       "- Warum können Sie nicht kommen?",
       "- Fragen Sie nach den Hausaufgaben?"
@@ -56,9 +59,10 @@
       "Mit freundlichen Grüßen",
       "Christian"
     ],
+    "letterTopicEn": [
+      "You are ill and cannot come to the language course. Write to your teacher:"
+    ],
     "letterQuestionEn": [
-      "You are ill and cannot come to the language course. Write to your teacher:",
-      "",
       "- How long you can not come? ",
       "- Why you cannot come?",
       "- Ask about the homework"
@@ -77,9 +81,10 @@
   },
   {
     "letterId": "3",
+    "letterTopic": [
+      "Sie wollen ein Auto kaufen. Ihre Freundin Lily versteht viel über Autos. Schreiben Sie eine E-Mail an Lily:"
+    ],
     "letterQuestion": [
-      "Sie wollen ein Auto kaufen. Ihre Freundin Lily versteht viel über Autos. Schreiben Sie eine E-Mail an Lily:",
-      "",
       "- Sie sollten ein neues Auto kaufen.",
       "- Sie brauchen ihre Hilfe, um das neueste Modellauto zu kaufen.",
       "- Fragen Sie, ob sie am Samstag Zeit hat? "
@@ -96,9 +101,10 @@
       "Liebe Grüße",
       "Michael"
     ],
+    "letterTopicEn": [
+      "You want to buy a car. Your friend Lily knows a lot about cars. Write an email to Lily:"
+    ],
     "letterQuestionEn": [
-      "You want to buy a car. Your friend Lily knows a lot about cars. Write an email to Lily:",
-      "",
       "- You should buy a new car.",
       "- You need your friend's help to buy the latest model car",
       "- Ask her whether she has time on Saturday?"
@@ -118,9 +124,10 @@
   },
   {
     "letterId": "4",
+    "letterTopic": [
+      "Sie waren letzten Sommer in Berlin in einem Deutschkurs. Sie schreiben an Ihrem Lehrer Herr Henry:"
+    ],
     "letterQuestion": [
-      "Sie waren letzten Sommer in Berlin in einem Deutschkurs. Sie schreiben an Ihrem Lehrer Herr Henry:",
-      "",
       "- Gibt es dieses Jahr einen Deutschkurs für B1? Wann?",
       "- Sie möchten sich an den Kurs anmelden."
     ],
@@ -137,9 +144,10 @@
       "Mit freundlichen Grüßen",
       "Schmidt"
     ],
+    "letterTopicEn": [
+      "You attended a German course in Berlin last summer. You write to your teacher, Mr. Henry:"
+    ],
     "letterQuestionEn": [
-      "You attended a German course in Berlin last summer. You write to your teacher, Mr. Henry:",
-      "",
       "- Is there a German course for B1 this year? When?",
       "- You want to register for the course."
     ],
@@ -159,9 +167,10 @@
   },
   {
     "letterId": "5",
+    "letterTopic": [
+      "Schreiben Sie eine Einladung zu Ihrem Geburtstag für Ihre Freunde:"
+    ],
     "letterQuestion": [
-      "Schreiben Sie eine Einladung zu Ihrem Geburtstag für Ihre Freunde:",
-      "",
       "- Wo und wann Sie ihre Party machen?",
       "- Die Freunde sollen einen Kuchen und einen Salat mitbringen."
     ],
@@ -176,9 +185,10 @@
       "Liebe Grüße",
       "Clara"
     ],
+    "letterTopicEn": [
+      "Write an invitation on your birthday for your friends:"
+    ],
     "letterQuestionEn": [
-      "Write an invitation on your birthday for your friends:",
-      "",
       "- Where and when do you have your party?",
       "- The friends should bring a cake and a salad."
     ],
@@ -196,9 +206,10 @@
   },
   {
     "letterId": "6",
+    "letterTopic": [
+      "Ihre Prüfung ist beendet. Jetzt möchten Sie am Wochenende einen Ausflug mit Ihrer Freundin Emilia machen. Schreiben Sie eine E-Mail an Emilia"
+    ],
     "letterQuestion": [
-      "Ihre Prüfung ist beendet. Jetzt möchten Sie am Wochenende einen Ausflug mit Ihrer Freundin Emilia machen. Schreiben Sie eine E-Mail an Emilia",
-      "",
       "- Wohin wollen Sie fahren?",
       "- Was soll Emilia mitbringen?",
       "- Wo wollen Sie sich treffen?."
@@ -214,9 +225,10 @@
     "letterEnd": [
       "Lieber Jonas"
     ],
+    "letterTopicEn": [
+      "Your exam is over. Now you would like to go on a weekend trip with your friend Emilia. Write an email to Emilia:"
+    ],
     "letterQuestionEn": [
-      "Your exam is over. Now you would like to go on a weekend trip with your friend Emilia. Write an email to Emilia:",
-      "",
       "- Where do you want to drive?",
       "- What should Emilia bring?",
       "- Where do you want to meet?"
@@ -236,9 +248,10 @@
   },
   {
     "letterId": "7",
+    "letterTopic": [
+      "Sie möchten im Sommer Munich besuchen. Schreiben Sie eine E-Mail an die Touristeninfo:"
+    ],
     "letterQuestion": [
-      "Sie möchten im Sommer Munich besuchen. Schreiben Sie eine E-Mail an die Touristeninfo:",
-      "",
       "- Warum schreiben Sie?",
       "- Fragen Sie nach Informationen über Film, Kulturprogramm, Museen usw.",
       "- Fragen Sie nach den Hoteladressen?"
@@ -256,9 +269,10 @@
       "Mit freundlichen Grüßen",
       "Schmidt"
     ],
+    "letterTopicEn": [
+      "You would like to visit Munich in the summer. Write an e-mail to the tourist information:"
+    ],
     "letterQuestionEn": [
-      "You would like to visit Munich in the summer. Write an e-mail to the tourist information:",
-      "",
       "- Why do you write?",
       "- Ask for information about the film, cultural programs, museums, etc.",
       "- Ask for the hotel address?"
@@ -279,9 +293,10 @@
   },
   {
     "letterId": "8",
-    "letterQuestion": [
+    "letterTopic": [
       "Sie haben am 22. Mai um 11 Uhr einen Termin im Krankenhaus. Schreiben Sie an das Krankenhaus:",
-      "",
+    ],
+    "letterQuestion": [
       "- Sie können nicht kommen.",
       "- Sie müssen Ihre Prüfung an Ihrer Universität ablegen.",
       "- Fragen Sie: Können Sie am 25. Mai kommen?"
@@ -297,9 +312,10 @@
       "Mit freundlichen Grüßen",
       "Ben"
     ],
+    "letterTopicEn": [
+      "You have an appointment at the hospital at 11 am on May 22nd. Write to the hospital:"
+    ],
     "letterQuestionEn": [
-      "You have an appointment at the hospital at 11 am on May 22nd. Write to the hospital:",
-      "",
       "- You can't come.",
       "- You have to take your exam at your university.",
       "- Ask: Can you come on May 25th?"

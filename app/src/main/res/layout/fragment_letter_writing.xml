@@ -27,6 +27,24 @@
             <androidx.constraintlayout.widget.Group
                 android:layout_width="0dp"
                 android:layout_height="0dp"
+                android:background="@drawable/email_bg_shape"
+                app:layout_constraintBottom_toBottomOf="@id/letter_question_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/letter_topic_tv" />
+
+            <androidx.constraintlayout.widget.Group
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/email_bg_shape"
+                app:layout_constraintBottom_toBottomOf="@id/letter_question_trans_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/letter_topic_trans_tv" />
+
+            <androidx.constraintlayout.widget.Group
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:layout_marginTop="6dp"
                 android:background="@drawable/email_bg_shape"
                 app:layout_constraintBottom_toBottomOf="@id/letter_end_tv"
@@ -47,7 +65,7 @@
                 app:layout_constraintTop_toTopOf="@id/letter_start_trans_tv" />
 
             <TextView
-                android:id="@+id/letter_question_tv"
+                android:id="@+id/letter_topic_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/email_ques_bg_shape"
@@ -55,8 +73,8 @@
                 android:paddingStart="15dp"
                 android:paddingTop="15dp"
                 android:paddingEnd="15dp"
-                android:paddingBottom="20dp"
-                android:text="@{viewModel.letter.letterQuestion}"
+                android:paddingBottom="10dp"
+                android:text="@{viewModel.letter.letterTopic}"
                 android:textColor="@color/textDark"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +82,24 @@
                 tools:text="Schreiben eine email." />
 
             <TextView
-                android:id="@+id/letter_question_trans_tv"
+                android:id="@+id/letter_question_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/email_ques_bg_shape"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="20dp"
+                android:text="@{viewModel.letter.letterQuestion}"
+                android:textColor="@color/textDark"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/letter_topic_tv"
+                tools:text="- Warum schreiben Sie das?" />
+
+            <TextView
+                android:id="@+id/letter_topic_trans_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
@@ -73,14 +108,33 @@
                 android:paddingStart="15dp"
                 android:paddingTop="15dp"
                 android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="@{viewModel.letter.letterTopicEn}"
+                android:textColor="@color/textDark"
+                android:textSize="18sp"
+                android:visibility="@{viewModel.translateOn ? View.VISIBLE : View.GONE}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/letter_question_tv"
+                tools:text="Write a letter."
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/letter_question_trans_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/email_ques_bg_shape"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
                 android:paddingBottom="20dp"
                 android:text="@{viewModel.letter.letterQuestionEn}"
                 android:textColor="@color/textDark"
                 android:textSize="18sp"
                 android:visibility="@{viewModel.translateOn ? View.VISIBLE : View.GONE}"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/letter_question_tv"
-                tools:text="Schreiben eine email."
+                app:layout_constraintTop_toBottomOf="@id/letter_topic_trans_tv"
+                tools:text="- Why you writing letter?"
                 tools:visibility="visible" />
 
             <androidx.constraintlayout.widget.Barrier
