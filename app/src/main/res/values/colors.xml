@@ -12,6 +12,13 @@
     <color name="colorPrimaryLight">#486853</color>
     <color name="colorAccent">#CFD2D7</color>
 
+
+    <color name="text_light_green">#53745e</color>
+
+    <color name="text_topic_color">@color/colorPrimaryLight</color>
+    <color name="text_question_color">#53745e</color>
+    <color name="text_answer_color">@color/colorPrimaryLight</color>
+
 <!--
     <color name="colorPrimary">#3E0000</color>
     <color name="colorPrimaryDark">#2E0000</color>

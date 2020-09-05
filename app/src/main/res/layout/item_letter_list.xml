@@ -27,39 +27,37 @@
                 android:id="@+id/letter_title_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/textDark"
-                android:padding="5dp"
+                android:textColor="@color/text_answer_color"
                 android:text="@{@string/brief(item.letterId)}"
-                android:textSize="20sp"
+                android:textSize="14sp"
+                android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:text="Letter Title" />
+                tools:text="Brief 5" />
 
             <TextView
                 android:id="@+id/letter_category_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:padding="5dp"
-                android:textColor="@color/textDark"
+                android:textColor="@color/text_answer_color"
                 android:text="@{item.title}"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@id/letter_title_tv"
                 app:layout_constraintTop_toBottomOf="@id/letter_title_tv"
-                tools:text="Letter Category" />
+                tools:text="Ein Auto kaufen" />
 
             <TextView
                 android:id="@+id/letter_keywords_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:padding="5dp"
-                android:textColor="@color/textDark"
+                android:textColor="@color/text_question_color"
                 android:text="@{@string/keyword(item.keywords)}"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@id/letter_title_tv"
                 app:layout_constraintTop_toBottomOf="@id/letter_category_tv"
-                tools:text="Letter Category" />
+                tools:text="Kaufen, Auto, Hilfe" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
