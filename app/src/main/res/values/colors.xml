@@ -37,6 +37,8 @@
     <color name="grey">#A9A9A9</color>
     <color name="textDark">#3D3D3D</color>
 
+    <color name="itemBg">#d8dfda</color>
+
 <!--
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
