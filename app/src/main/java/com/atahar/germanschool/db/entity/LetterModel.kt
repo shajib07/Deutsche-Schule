@@ -21,5 +21,17 @@ data class LetterModel (
     var letterAnswer: String,
 
     @ColumnInfo(name = "letter_end")
-    var letterEnd: String
+    var letterEnd: String,
+
+    @ColumnInfo(name = "letter_start_en")
+    var letterStartEn: String,
+
+    @ColumnInfo(name = "letter_question_en")
+    val letterQuestionEn: String,
+
+    @ColumnInfo(name = "letter_answer_en")
+    var letterAnswerEn: String,
+
+    @ColumnInfo(name = "letter_end_en")
+    var letterEndEn: String
 )

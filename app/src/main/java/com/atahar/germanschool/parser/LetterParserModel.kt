@@ -6,5 +6,9 @@ data class LetterParserModel (
     val letterStart: ArrayList<String>,
     val letterQuestion: ArrayList<String>,
     var letterAnswer: ArrayList<String>,
-    var letterEnd: ArrayList<String>
+    var letterEnd: ArrayList<String>,
+    val letterStartEn: ArrayList<String>,
+    val letterQuestionEn: ArrayList<String>,
+    var letterAnswerEn: ArrayList<String>,
+    var letterEndEn: ArrayList<String>
 )

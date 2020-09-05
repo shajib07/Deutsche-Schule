@@ -2,7 +2,8 @@
   {
     "letterId": "1",
     "letterQuestion": [
-      "Sie haben einen neuen Job. Schreiben Sie eine E-Mail an Ihrer Freundin Julia.",
+      "Sie haben einen neuen Job. Schreiben Sie eine E-Mail an Ihrer Freundin Julia:",
+      "",
       "- Erzähl ihr von deinem Job.",
       "- Erzählen Sie ihr von Ihren Kollegen."
     ],
@@ -16,12 +17,30 @@
     "letterEnd": [
       "Liebe Grüße",
       "Susan"
+    ],
+    "letterQuestionEn": [
+      "You have a new job. Write an email to your friend Julia:",
+      "",
+      "- Tell her about your job.",
+      "- Tell her about your colleagues."
+    ],
+    "letterStartEn": [
+      "Dear Julia,"
+    ],
+    "letterAnswerEn": [
+      "I got a new job last month. I am now working as a software developer in a software company. My colleagues are very nice and friendly. They are also very helpful. I love my new job.",
+      "Please email me about your current job."
+    ],
+    "letterEndEn": [
+      "Best Regards",
+      "Susan"
     ]
   },
   {
     "letterId": "2",
     "letterQuestion": [
       "Sie sind krank und können nicht zum Sprachkurs kommen. Schreiben Sie Ihrer Lehrerin:",
+      "",
       "- Wie lange können Sie nicht kommen?",
       "- Warum können Sie nicht kommen?",
       "- Fragen Sie nach den Hausaufgaben?"
@@ -36,12 +55,31 @@
     "letterEnd": [
       "Mit freundlichen Grüßen",
       "Christian"
+    ],
+    "letterQuestionEn": [
+      "You are ill and cannot come to the language course. Write to your teacher:",
+      "",
+      "- How long you can not come? ",
+      "- Why you cannot come?",
+      "- Ask about the homework"
+    ],
+    "letterStartEn": [
+      "Dear Miss Anna,"
+    ],
+    "letterAnswerEn": [
+      "I'm sick from last night. I couldn't take the language course tomorrow. I have a fever and have taken the doctor's appointment.",
+      "Please, let me know about your homework.."
+    ],
+    "letterEndEn": [
+      "Best Regards",
+      "Christian"
     ]
   },
   {
     "letterId": "3",
     "letterQuestion": [
       "Sie wollen ein Auto kaufen. Ihre Freundin Lily versteht viel über Autos. Schreiben Sie eine E-Mail an Lily:",
+      "",
       "- Sie sollten ein neues Auto kaufen.",
       "- Sie brauchen ihre Hilfe, um das neueste Modellauto zu kaufen.",
       "- Fragen Sie, ob sie am Samstag Zeit hat? "
@@ -57,12 +95,32 @@
     "letterEnd": [
       "Liebe Grüße",
       "Michael"
+    ],
+    "letterQuestionEn": [
+      "You want to buy a car. Your friend Lily knows a lot about cars. Write an email to Lily:",
+      "",
+      "- You should buy a new car.",
+      "- You need your friend's help to buy the latest model car",
+      "- Ask her whether she has time on Saturday?"
+    ],
+    "letterStartEn": [
+      "Dear Lily,"
+    ],
+    "letterAnswerEn": [
+      "I want to buy a new car. But I have no idea about the car. Could you help me with buying the new model car? How much money should I plan for the car?",
+      "Do you have time on Saturday? Please write me an email.",
+      "Thanks and see you."
+    ],
+    "letterEndEn": [
+      "Best Regards",
+      "Michael"
     ]
   },
   {
     "letterId": "4",
     "letterQuestion": [
       "Sie waren letzten Sommer in Berlin in einem Deutschkurs. Sie schreiben an Ihrem Lehrer Herr Henry:",
+      "",
       "- Gibt es dieses Jahr einen Deutschkurs für B1? Wann?",
       "- Sie möchten sich an den Kurs anmelden."
     ],
@@ -78,12 +136,32 @@
     "letterEnd": [
       "Mit freundlichen Grüßen",
       "Schmidt"
+    ],
+    "letterQuestionEn": [
+      "You attended a German course in Berlin last summer. You write to your teacher, Mr. Henry:",
+      "",
+      "- Is there a German course for B1 this year? When?",
+      "- You want to register for the course."
+    ],
+    "letterStartEn": [
+      "Dear Mr. Henry,"
+    ],
+    "letterAnswerEn": [
+      "My name is Julia. I was in Berlin for your German course last summer. Is there a B1 course this year?",
+      "When does the course start? What is the price for the course?",
+      "I would like to register for the course.",
+      "I am waiting for your reply."
+    ],
+    "letterEndEn": [
+      "Best Regards",
+      "Schmidt"
     ]
   },
   {
     "letterId": "5",
     "letterQuestion": [
       "Schreiben Sie eine Einladung zu Ihrem Geburtstag für Ihre Freunde:",
+      "",
       "- Wo und wann Sie ihre Party machen?",
       "- Die Freunde sollen einen Kuchen und einen Salat mitbringen."
     ],
@@ -97,12 +175,30 @@
     "letterEnd": [
       "Liebe Grüße",
       "Clara"
+    ],
+    "letterQuestionEn": [
+      "Write an invitation on your birthday for your friends:",
+      "",
+      "- Where and when do you have your party?",
+      "- The friends should bring a cake and a salad."
+    ],
+    "letterStartEn": [
+      "Dear Charlotte und Paul,"
+    ],
+    "letterAnswerEn": [
+      "I'm going to have my party on July 20th. I would like to invite you to my birthday. The party starts at 7:00 pm at my home. Can you bring some salad, please?",
+      "I'm looking forward to meeting you guys."
+    ],
+    "letterEndEn": [
+      "Best Regards",
+      "Clara"
     ]
   },
   {
     "letterId": "6",
     "letterQuestion": [
       "Ihre Prüfung ist beendet. Jetzt möchten Sie am Wochenende einen Ausflug mit Ihrer Freundin Emilia machen. Schreiben Sie eine E-Mail an Emilia",
+      "",
       "- Wohin wollen Sie fahren?",
       "- Was soll Emilia mitbringen?",
       "- Wo wollen Sie sich treffen?."
@@ -117,12 +213,32 @@
     ],
     "letterEnd": [
       "Lieber Jonas"
+    ],
+    "letterQuestionEn": [
+      "Your exam is over. Now you would like to go on a weekend trip with your friend Emilia. Write an email to Emilia:",
+      "",
+      "- Where do you want to drive?",
+      "- What should Emilia bring?",
+      "- Where do you want to meet?"
+    ],
+    "letterStartEn": [
+      "Dear Emilia,"
+    ],
+    "letterAnswerEn": [
+      "My exam ended yesterday. I want to do a tour with you this weekend. We can go to the sea and swim.",
+      "I'll pick you up in the car on Saturday at 10:00 am. You have to bring your sunglasses and something to eat.",
+      "Please call me tonight."
+    ],
+    "letterEndEn": [
+      "Best Regards",
+      "Jonas"
     ]
   },
   {
     "letterId": "7",
     "letterQuestion": [
       "Sie möchten im Sommer Munich besuchen. Schreiben Sie eine E-Mail an die Touristeninfo:",
+      "",
       "- Warum schreiben Sie?",
       "- Fragen Sie nach Informationen über Film, Kulturprogramm, Museen usw.",
       "- Fragen Sie nach den Hoteladressen?"
@@ -139,31 +255,65 @@
     "letterEnd": [
       "Mit freundlichen Grüßen",
       "Schmidt"
+    ],
+    "letterQuestionEn": [
+      "You would like to visit Munich in the summer. Write an e-mail to the tourist information:",
+      "",
+      "- Why do you write?",
+      "- Ask for information about the film, cultural programs, museums, etc.",
+      "- Ask for the hotel address?"
+    ],
+    "letterStartEn": [
+      "Dear Sir or Madam,"
+    ],
+    "letterAnswerEn": [
+      "I'm going to Munich on my summer vacation in August. Do you have any information about films, museums, etc.? Is there a cultural program in your city?",
+      "Please send me the hotel addresses as well.",
+      "I am waiting for your reply.",
+      "Thanks in advance."
+    ],
+    "letterEndEn": [
+      "Best Regards",
+      "Schmidt"
     ]
   },
   {
     "letterId": "8",
     "letterQuestion": [
-      "Sie möchten am Wochenende einen Ausflug mit dem Auto machen, zusammen mit",
-      "Ihrer Freundin Sylvia. Schreiben Sie eine E-Mail an Sylvia.",
-      "- Wohin wollen Sie fahren?",
-      "- Was soll Sylvia mitbringen?",
-      "- Wo wollen Sie sich treffen?"
-
+      "Sie haben am 22. Mai um 11 Uhr einen Termin im Krankenhaus. Schreiben Sie an das Krankenhaus:",
+      "",
+      "- Sie können nicht kommen.",
+      "- Sie müssen Ihre Prüfung an Ihrer Universität ablegen.",
+      "- Fragen Sie: Können Sie am 25. Mai kommen?"
     ],
     "letterStart": [
-      "Hallo Sylvia,"
+      "Sehr geehrte Damen und Herren,"
     ],
     "letterAnswer": [
-      "ich glaube, an diesem Wochenende scheint die Sonne.",
-      "Wir können ans Meer fahren und schwimmen.",
-      "Ich hole dich am Sonntag um 8.30 mit dem Auto ab.",
-      "Du musst deinen Fotoapparat und etwas zu essen mitnehmen.",
-      "Bitte, ruf mich heute Abend an!"
+      "Ich habe am 22. Mai um 11 Uhr einen Termin vereinbart. Ich kann leider nicht kommen. Ich habe an diesem Tag eine Prüfung an meiner Universität. Kann ich am 25. Mai kommen?",
+      "Ich warte auf die Antwort."
     ],
     "letterEnd": [
-      "Herzlichen Grüße",
-      "Deine Susan"
+      "Mit freundlichen Grüßen",
+      "Ben"
+    ],
+    "letterQuestionEn": [
+      "You have an appointment at the hospital at 11 am on May 22nd. Write to the hospital:",
+      "",
+      "- You can't come.",
+      "- You have to take your exam at your university.",
+      "- Ask: Can you come on May 25th?"
+    ],
+    "letterStartEn": [
+      "Dear Sir or Madam,"
+    ],
+    "letterAnswerEn": [
+      "I made an appointment on May 22nd at 11 am. Unfortunately I cannot come. I have an exam at my university that day. Can I come on May 25th?",
+      "I'm waiting for an answer."
+    ],
+    "letterEndEn": [
+      "Best Regards",
+      "Ben"
     ]
   }
 ]

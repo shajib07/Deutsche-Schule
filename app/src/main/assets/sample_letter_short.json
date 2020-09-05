@@ -1,50 +1,50 @@
 [
   {
     "letterId":"1",
-    "title":"Sommer Urlaub",
+    "title":"Neuer Job",
     "category":"Der Apfel ist süß.",
-    "keywords": ["Machen", "Geburtstag", "Offnen"]
+    "keywords": ["Neuer Job", "Softwareentwickler"]
   },
   {
     "letterId":"2",
-    "title":"Ein günstiges Ticket von Frankfurt nach Sydney",
+    "title":"Sie sind krank",
     "category":"Der Apfel ist süß.",
-    "keywords": ["Machen", "Geburtstag", "Offnen"]
+    "keywords": ["Krank", "Sprachkurs", "Lehrerin"]
   },
   {
     "letterId":"3",
-    "title":"Einen neuen Computer kaufen",
+    "title":"Ein Auto kaufen",
     "category":"Der Apfel ist süß.",
-    "keywords": ["Machen", "Geburtstag", "Offnen"]
+    "keywords": ["Kaufen", "Auto", "Hilfe"]
   },
   {
     "letterId":"4",
-    "title":"Sie möchten am Wochenende einen Ausflug mit dem Auto machen, zusammen mit",
+    "title":"Melden Sie sich für einen Deutschkurs an",
     "category":"Der Apfel ist süß.",
-    "keywords": ["Machen", "Geburtstag", "Offnen"]
+    "keywords": ["Deutschkurs", "Anmeldung"]
   },
   {
     "letterId":"5",
-    "title":"Sommer Urlaub",
+    "title":"Laden Sie Ihre Freunde ein",
     "category":"Der Apfel ist süß.",
-    "keywords": ["Machen", "Geburtstag", "Offnen"]
+    "keywords": ["Geburtstag", "Einladung"]
   },
   {
     "letterId":"6",
-    "title":"Ein günstiges Ticket von Frankfurt nach Sydney",
+    "title":"Geh auf eine Reise",
     "category":"Der Apfel ist süß.",
-    "keywords": ["Machen", "Geburtstag", "Offnen"]
+    "keywords": ["Ausflug", "Fahren", "Treffen"]
   },
   {
     "letterId":"7",
-    "title":"Einen neuen Computer kaufen",
+    "title":"Sommerurlaub",
     "category":"Der Apfel ist süß.",
-    "keywords": ["Machen", "Geburtstag", "Offnen"]
+    "keywords": ["Touristeninfo", "Information", "Besuchen"]
   },
   {
     "letterId":"8",
-    "title":"Sie möchten am Wochenende einen Ausflug mit dem Auto machen, zusammen mit",
+    "title":"Termin im Krankenhaus",
     "category":"Der Apfel ist süß.",
-    "keywords": ["Machen", "Geburtstag", "Offnen"]
+    "keywords": ["Termin", "Prüfung"]
   }
 ]
