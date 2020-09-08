@@ -33,6 +33,11 @@ abstract class GermanSchoolDatabase : RoomDatabase() {
         }
     }
 
+/*
+    Migration ref:
+    https://medium.com/swlh/the-complete-room-migration-guide-d88b46c51206
+*/
+
     companion object {
 
         private var INSTANCE: GermanSchoolDatabase? = null
