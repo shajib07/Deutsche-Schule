@@ -42,6 +42,14 @@ abstract class GermanSchoolDatabase : RoomDatabase() {
 
         private var INSTANCE: GermanSchoolDatabase? = null
 
+/*
+        val MIGRATION_1_2 = object : Migration(1, 2) {
+            override fun migrate(database: SupportSQLiteDatabase) {
+                database.execSQL("ALTER TABLE letter_sample_table ADD COLUMN letter_vocabulary TEXT NOT NULL DEFAULT ('')")
+            }
+        }
+*/
+
         fun getInstance(context: Context): GermanSchoolDatabase {
             synchronized(this) {
 
