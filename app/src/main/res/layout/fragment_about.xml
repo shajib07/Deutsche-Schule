@@ -34,7 +34,8 @@
                 android:paddingEnd="10dp"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
-                android:text="This application is under development."
+                android:textColor="@color/letter_structure_text_color"
+                android:text="This application is developed by Md Atahar Hossain."
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

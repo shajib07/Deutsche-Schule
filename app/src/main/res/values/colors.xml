@@ -16,6 +16,7 @@
     <color name="text_topic_color">@color/colorPrimaryLight</color>
     <color name="text_question_color">#53745e</color>
     <color name="text_answer_color">@color/colorPrimaryLight</color>
+    <color name="letter_structure_text_color">@color/colorPrimaryLight</color>
 
     <color name="translation_border_color">#f1f1f1</color>
     <color name="translated_text_color">#db4c4c</color>
