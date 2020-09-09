@@ -14,6 +14,7 @@
     </data>
 
     <ScrollView
+        android:id="@+id/letter_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/letter_fragment_bg_color">
@@ -24,50 +25,54 @@
             android:padding="6dp">
 
             <androidx.constraintlayout.widget.Group
+                android:id="@+id/ques_grp"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:background="@drawable/email_bg_shape"
-                app:layout_constraintBottom_toBottomOf="@id/letter_question_tv"
+                app:layout_constraintBottom_toBottomOf="@id/ques_expand_iv"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/letter_topic_tv" />
+                app:layout_constraintTop_toTopOf="@id/letter_topic_tv"
+                app:onClickListener="@{() -> viewModel.questionClicked()}" />
 
             <androidx.constraintlayout.widget.Group
+                android:id="@+id/ques_trans_grp"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@drawable/email_bg_shape"
+                android:visibility="@{viewModel.questranslateOn ? View.VISIBLE : View.GONE}"
+                app:constraint_referenced_ids="letter_topic_trans_tv, letter_question_trans_tv, letter_ques_border"
                 app:layout_constraintBottom_toBottomOf="@id/letter_question_trans_tv"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/letter_topic_trans_tv" />
+                app:layout_constraintTop_toTopOf="@id/letter_ques_border" />
 
             <androidx.constraintlayout.widget.Group
+                android:id="@+id/ans_grp"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="6dp"
                 android:background="@drawable/email_bg_shape"
-                app:layout_constraintBottom_toBottomOf="@id/letter_end_tv"
+                app:layout_constraintBottom_toBottomOf="@id/ans_expand_iv"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/letter_start_tv" />
+                app:layout_constraintTop_toTopOf="@id/letter_start_tv"
+                app:onClickListener="@{() -> viewModel.ansClicked()}" />
 
             <androidx.constraintlayout.widget.Group
+                android:id="@+id/ans_trans_grp"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_marginTop="6dp"
-                android:background="@drawable/email_bg_shape"
-                android:visibility="@{viewModel.translateOn ? View.VISIBLE : View.GONE}"
-                app:constraint_referenced_ids="letter_start_trans_tv, letter_trans_tv, letter_end_trans_tv"
+                android:visibility="@{viewModel.anstranslateOn ? View.VISIBLE : View.GONE}"
+                app:constraint_referenced_ids="letter_start_trans_tv, letter_trans_tv, letter_end_trans_tv, letter_ans_border"
                 app:layout_constraintBottom_toBottomOf="@id/letter_end_trans_tv"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/letter_start_trans_tv" />
+                app:layout_constraintTop_toTopOf="@id/letter_ans_border" />
 
             <TextView
                 android:id="@+id/letter_topic_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/email_ques_bg_shape"
                 android:lineSpacingMultiplier="1.2"
                 android:paddingStart="15dp"
                 android:paddingTop="15dp"
@@ -84,12 +89,11 @@
                 android:id="@+id/letter_question_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/email_ques_bg_shape"
                 android:lineSpacingMultiplier="1.2"
                 android:paddingStart="15dp"
                 android:paddingTop="5dp"
                 android:paddingEnd="15dp"
-                android:paddingBottom="20dp"
+                android:paddingBottom="5dp"
                 android:text="@{viewModel.letter.letterQuestion}"
                 android:textColor="@color/text_question_color"
                 android:textSize="16sp"
@@ -97,23 +101,31 @@
                 app:layout_constraintTop_toBottomOf="@id/letter_topic_tv"
                 tools:text="- Warum schreiben Sie das?" />
 
+            <View
+                android:id="@+id/letter_ques_border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:background="@color/translation_border_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/letter_question_tv" />
+
             <TextView
                 android:id="@+id/letter_topic_trans_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="6dp"
-                android:background="@drawable/email_ques_bg_shape"
                 android:lineSpacingMultiplier="1.2"
                 android:paddingStart="15dp"
-                android:paddingTop="15dp"
+                android:paddingTop="5dp"
                 android:paddingEnd="15dp"
                 android:paddingBottom="10dp"
                 android:text="@{viewModel.letter.letterTopicEn}"
-                android:textColor="@color/text_topic_color"
+                android:textColor="@color/translated_text_color"
                 android:textSize="16sp"
-                android:visibility="@{viewModel.translateOn ? View.VISIBLE : View.GONE}"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/letter_question_tv"
+                app:layout_constraintTop_toBottomOf="@id/letter_ques_border"
                 tools:text="Write a letter."
                 tools:visibility="visible" />
 
@@ -121,27 +133,35 @@
                 android:id="@+id/letter_question_trans_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/email_ques_bg_shape"
                 android:lineSpacingMultiplier="1.2"
                 android:paddingStart="15dp"
                 android:paddingTop="10dp"
                 android:paddingEnd="15dp"
-                android:paddingBottom="20dp"
+                android:paddingBottom="5dp"
                 android:text="@{viewModel.letter.letterQuestionEn}"
-                android:textColor="@color/text_question_color"
+                android:textColor="@color/translated_text_color"
                 android:textSize="16sp"
-                android:visibility="@{viewModel.translateOn ? View.VISIBLE : View.GONE}"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/letter_topic_trans_tv"
                 tools:text="- Why you writing letter?"
                 tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ques_expand_iv"
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="20dp"
+                app:imageResource="@{viewModel.questranslateOn ? viewModel.collapseIcon : viewModel.expandIcon}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/letter_question_trans_tv"
+                tools:src="@drawable/ic_arrow_down_24px" />
 
             <androidx.constraintlayout.widget.Barrier
                 android:id="@+id/ques_barrier"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:barrierDirection="bottom"
-                app:constraint_referenced_ids="letter_question_tv, letter_question_trans_tv" />
+                app:constraint_referenced_ids="letter_question_tv, letter_question_trans_tv, ques_expand_iv" />
 
             <TextView
                 android:id="@+id/letter_start_tv"
@@ -181,7 +201,7 @@
                 android:paddingStart="15dp"
                 android:paddingTop="20dp"
                 android:paddingEnd="15dp"
-                android:paddingBottom="25dp"
+                android:paddingBottom="5dp"
                 android:text="@{viewModel.letter.letterEnd}"
                 android:textColor="@color/text_answer_color"
                 android:textSize="16sp"
@@ -189,18 +209,29 @@
                 app:layout_constraintTop_toBottomOf="@id/letter_tv"
                 tools:text="Mit Freundlichen Grüße" />
 
+            <View
+                android:id="@+id/letter_ans_border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="2dp"
+                android:background="@color/translation_border_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/letter_end_tv" />
+
             <TextView
                 android:id="@+id/letter_start_trans_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingStart="15dp"
-                android:paddingTop="20dp"
+                android:paddingTop="10dp"
                 android:paddingEnd="15dp"
                 android:text="@{viewModel.letter.letterStartEn}"
-                android:textColor="@color/text_answer_color"
+                android:textColor="@color/translated_text_color"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@id/letter_question_tv"
-                app:layout_constraintTop_toBottomOf="@id/letter_end_tv"
+                app:layout_constraintTop_toBottomOf="@id/letter_ans_border"
                 tools:text="Lieber David." />
 
             <TextView
@@ -213,7 +244,7 @@
                 android:paddingTop="15dp"
                 android:paddingEnd="15dp"
                 android:text="@{viewModel.letter.letterAnswerEn}"
-                android:textColor="@color/text_answer_color"
+                android:textColor="@color/translated_text_color"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
                 app:layout_constraintTop_toBottomOf="@id/letter_start_trans_tv"
@@ -227,13 +258,30 @@
                 android:paddingStart="15dp"
                 android:paddingTop="20dp"
                 android:paddingEnd="15dp"
-                android:paddingBottom="25dp"
+                android:paddingBottom="5dp"
                 android:text="@{viewModel.letter.letterEndEn}"
-                android:textColor="@color/text_answer_color"
+                android:textColor="@color/translated_text_color"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/letter_question_tv"
                 app:layout_constraintTop_toBottomOf="@id/letter_trans_tv"
                 tools:text="Mit Freundlichen Grüße" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/ans_barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="letter_end_tv, letter_end_trans_tv" />
+
+            <ImageView
+                android:id="@+id/ans_expand_iv"
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="20dp"
+                app:imageResource="@{viewModel.anstranslateOn ? viewModel.collapseIcon : viewModel.expandIcon}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ans_barrier"
+                tools:src="@drawable/ic_arrow_down_24px" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

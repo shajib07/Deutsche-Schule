@@ -54,6 +54,7 @@ class LetterWritingFragment : Fragment() {
             }
         })
 
+/*
         viewModel.onTitleChange.observe(viewLifecycleOwner, Observer { hasTranslated ->
             if (hasTranslated) {
                 menu.findItem(R.id.action_translate).title = "Hide"
@@ -61,23 +62,25 @@ class LetterWritingFragment : Fragment() {
                 menu.findItem(R.id.action_translate).title = "Translate"
             }
         })
+*/
 
         return binding.root
     }
 
+/*
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.menu_letter_writing, menu)
         this.menu = menu
     }
+*/
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
+/*
             R.id.action_translate -> showTranslation()
+*/
         }
         return super.onOptionsItemSelected(item)
     }
 
-    private fun showTranslation() {
-        viewModel.actionTranslateOnClick()
-    }
 }
