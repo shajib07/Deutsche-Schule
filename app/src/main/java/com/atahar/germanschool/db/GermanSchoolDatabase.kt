@@ -31,6 +31,12 @@ abstract class GermanSchoolDatabase : RoomDatabase() {
             val request = OneTimeWorkRequestBuilder<DBInsertWorker>().build()
             WorkManager.getInstance(context).enqueue(request)
         }
+
+        override fun onDestructiveMigration(db: SupportSQLiteDatabase) {
+            super.onDestructiveMigration(db)
+            val request = OneTimeWorkRequestBuilder<DBInsertWorker>().build()
+            WorkManager.getInstance(context).enqueue(request)
+        }
     }
 
 /*
