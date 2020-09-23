@@ -72,7 +72,7 @@
     ],
     "letterAnswerEn": [
       "I'm sick from last night. I couldn't take the language course tomorrow. I have a fever and have taken the doctor's appointment.",
-      "Please, let me know about your homework.."
+      "Please, let me know about your homework."
     ],
     "letterEndEn": [
       "Best Regards",
@@ -85,7 +85,7 @@
       "Sie wollen ein Auto kaufen. Ihre Freundin Lily versteht viel über Autos. Schreiben Sie eine E-Mail an Lily:"
     ],
     "letterQuestion": [
-      "- Sie sollten ein neues Auto kaufen.",
+      "- Sie sollen ein neues Auto kaufen.",
       "- Sie brauchen ihre Hilfe, um das neueste Modellauto zu kaufen.",
       "- Fragen Sie, ob sie am Samstag Zeit hat? "
     ],
@@ -145,7 +145,7 @@
       "Schmidt"
     ],
     "letterTopicEn": [
-      "You attended a German course in Berlin last summer. You write to your teacher, Mr. Henry:"
+      "You attended a German course in Berlin last summer. Write to your teacher, Mr. Henry:"
     ],
     "letterQuestionEn": [
       "- Is there a German course for B1 this year? When?",
@@ -156,7 +156,7 @@
     ],
     "letterAnswerEn": [
       "My name is Julia. I was in Berlin for your German course last summer. Is there a B1 course this year?",
-      "When does the course start? What is the price for the course?",
+      "When does the course start? How much does this course cost?",
       "I would like to register for the course.",
       "I am waiting for your reply."
     ],
@@ -178,7 +178,7 @@
       "Liebe Charlotte und Paul,"
     ],
     "letterAnswer": [
-      "ich werde meine Party am 20. Juli feiern. Ich möchte gern euch zu meinem Geburtstag einladen. Die Party fängt um 19.00 Uhr bei mir zu Hause. Könnt ihr bitte etwas Salat mitbringen?",
+      "ich werde meine Geburtstag am 20. Juli feiern. Ich möchte gern euch zu meinem Geburtstag einladen. Die Party fängt um 19.00 Uhr bei mir zu Hause. Könnt ihr bitte etwas Salat mitbringen?",
       "Ich freue mich auf das Treffen mit euch."
     ],
     "letterEnd": [
@@ -186,7 +186,7 @@
       "Clara"
     ],
     "letterTopicEn": [
-      "Write an invitation on your birthday for your friends:"
+      "Write an invitation to your friends on your birthday:"
     ],
     "letterQuestionEn": [
       "- Where and when do you have your party?",
@@ -196,7 +196,7 @@
       "Dear Charlotte und Paul,"
     ],
     "letterAnswerEn": [
-      "I'm going to have my party on July 20th. I would like to invite you to my birthday. The party starts at 7:00 pm at my home. Can you bring some salad, please?",
+      "I'm going to celebrate my birthday on the 20th of July. I like to invite you to my birthday. The party starts at 7:00 pm at my home. Can you bring some salad, please?",
       "I'm looking forward to meeting you guys."
     ],
     "letterEndEn": [
@@ -237,8 +237,8 @@
       "Dear Emilia,"
     ],
     "letterAnswerEn": [
-      "My exam ended yesterday. I want to do a tour with you this weekend. We can go to the sea and swim.",
-      "I'll pick you up in the car on Saturday at 10:00 am. You have to bring your sunglasses and something to eat.",
+      "Yesterday, my exam had finished. I want to make a tour with you this weekend. We can go to the sea and swim",
+      "I'll pick you up in the car on Saturday at 10:00 am. You have to bring your sunglass and something to eat.",
       "Please call me tonight."
     ],
     "letterEndEn": [
@@ -270,7 +270,7 @@
       "Schmidt"
     ],
     "letterTopicEn": [
-      "You would like to visit Munich in the summer. Write an e-mail to the tourist information:"
+      "You would like to visit Munich in the summer. Write an e-mail to the tourist information office:"
     ],
     "letterQuestionEn": [
       "- Why do you write?",
@@ -281,8 +281,8 @@
       "Dear Sir or Madam,"
     ],
     "letterAnswerEn": [
-      "I'm going to Munich on my summer vacation in August. Do you have any information about films, museums, etc.? Is there a cultural program in your city?",
-      "Please send me the hotel addresses as well.",
+      "I am going to Munich on my summer vacation in August. Do you have any information about films, museums, etc.? Is there a cultural program in your city?",
+      "Please send me the hotel address as well.",
       "I am waiting for your reply.",
       "Thanks in advance."
     ],
@@ -294,7 +294,7 @@
   {
     "letterId": "8",
     "letterTopic": [
-      "Sie haben am 22. Mai um 11 Uhr einen Termin im Krankenhaus. Schreiben Sie an das Krankenhaus:",
+      "Sie haben am 22. Mai um 11 Uhr einen Termin im Krankenhaus. Schreiben Sie an das Krankenhaus:"
     ],
     "letterQuestion": [
       "- Sie können nicht kommen.",
@@ -313,19 +313,19 @@
       "Ben"
     ],
     "letterTopicEn": [
-      "You have an appointment at the hospital at 11 am on May 22nd. Write to the hospital:"
+      "You have an appointment at the hospital at 11 am on the 22nd of May. Write to the hospital:"
     ],
     "letterQuestionEn": [
-      "- You can't come.",
-      "- You have to take your exam at your university.",
-      "- Ask: Can you come on May 25th?"
+      "- You can not come.",
+      "- You have to attend your exam at your university.",
+      "- Ask: Can you come on the 25th of May?"
     ],
     "letterStartEn": [
       "Dear Sir or Madam,"
     ],
     "letterAnswerEn": [
-      "I made an appointment on May 22nd at 11 am. Unfortunately I cannot come. I have an exam at my university that day. Can I come on May 25th?",
-      "I'm waiting for an answer."
+      "I made an appointment at 11 am on the 22nd of May. Unfortunately, I cannot come. I have an exam at my university that day. Can I come on the 25th of May?",
+      "I am waiting for your answer."
     ],
     "letterEndEn": [
       "Best Regards",
