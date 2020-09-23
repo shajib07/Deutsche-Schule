@@ -30,13 +30,14 @@
                 android:id="@+id/about_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="10dp"
+                android:paddingStart="15dp"
                 android:paddingEnd="10dp"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
                 android:textColor="@color/letter_structure_text_color"
-                android:text="This application is developed by Md Atahar Hossain."
+                android:text="Please send your feedback here support@mdataharhossain.co"
                 android:textSize="18sp"
+                android:lineSpacingMultiplier="1.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

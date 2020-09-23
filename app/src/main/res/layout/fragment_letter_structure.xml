@@ -34,7 +34,7 @@
                 android:padding="10dp"
                 android:text="Die Anrede - Salutation (Formal)"
                 android:textColor="@color/letter_structure_text_color"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +57,7 @@
                 android:paddingBottom="20dp"
                 android:text="Sehr geehrte Damen und Herren,\nSehr geehrte Frau ___,\nSehr geehrte Herr ___,"
                 android:textColor="@color/letter_structure_text_color"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/salutation_formal_divider" />
 
@@ -78,7 +78,7 @@
                 android:padding="10dp"
                 android:text="Die Anrede - Salutation (Informal)"
                 android:textColor="@color/letter_structure_text_color"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/salutation_formal_body_tv" />
 
@@ -101,7 +101,7 @@
                 android:paddingBottom="20dp"
                 android:text="Liebe Freunde,\nLiebe Anja,\nLieber Henry,"
                 android:textColor="@color/letter_structure_text_color"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/salutation_informal_divider" />
 
@@ -122,7 +122,7 @@
                 android:padding="10dp"
                 android:text="Der Briefschluss - Closing (Formal)"
                 android:textColor="@color/letter_structure_text_color"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/salutation_informal_body_tv" />
 
@@ -145,7 +145,7 @@
                 android:paddingBottom="20dp"
                 android:text="Mit freundlichen Grüßen\nFreundliche Grüße"
                 android:textColor="@color/letter_structure_text_color"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/closing_formal_divider" />
 
@@ -166,7 +166,7 @@
                 android:padding="10dp"
                 android:text="Der Briefschluss - Closing (Informal)"
                 android:textColor="@color/letter_structure_text_color"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/closing_formal_body_tv" />
 
@@ -189,7 +189,7 @@
                 android:paddingBottom="20dp"
                 android:text="Liebe Grüße\nHerzliche Grüße"
                 android:textColor="@color/letter_structure_text_color"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/closing_informal_divider" />
 
