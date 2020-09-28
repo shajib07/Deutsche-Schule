@@ -15,7 +15,7 @@ import com.atahar.germanschool.db.entity.LetterShortModel
 import com.atahar.germanschool.db.typeconverter.KeywordConverter
 import com.atahar.germanschool.workers.DBInsertWorker
 
-@Database(entities = [LetterModel::class, LetterShortModel::class], version = 1, exportSchema = false)
+@Database(entities = [LetterModel::class, LetterShortModel::class], version = 3, exportSchema = false)
 @TypeConverters(KeywordConverter::class)
 abstract class GermanSchoolDatabase : RoomDatabase() {
 
